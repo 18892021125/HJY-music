@@ -1,6 +1,6 @@
 <template>
 	<view >
-		<view class="music" v-for="(val,index) in prodata.list" :key="index" @tap="goUrl('../info/index')">
+		<view class="music" v-for="(val,index) in prodata.list" :key="index" @tap="goUrl('./pages/user/user')">
 			<view class="musicitem">
 				<image v-if="val.src" :src="val.src" style="width: 80px; height: 80px; ">
 				<view class="textinfo">

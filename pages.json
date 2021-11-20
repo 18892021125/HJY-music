@@ -16,12 +16,53 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "我的",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor":"#f7ede2"
             }
             
         }
         ,{
             "path" : "components/musicclassification/musicclassification",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+				
+            }
+            
+        },
+		{
+		    "path" : "pages/explore/explore",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "滚动渐变的顶部导航栏",
+		        "navigationStyle":"custom"
+		    }
+		    
+		}
+        ,{
+            "path" : "components/gradientnav/gradientnav",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/jingxuan/jingxuan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/follow/follow",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",

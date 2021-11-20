@@ -16,24 +16,24 @@
 		<view class="banner">
 			
 			<li >
-				<uni-icons custom-prefix="iconfont" type="icon-zhibo" size="70"></uni-icons>
+				<uni-icons custom-prefix="iconfont" type="icon-zhibo" size="50"></uni-icons>
 				<br> 
 				<font class="icontext">直播间</font>
 			</li>
 			
 			<li >
-				<uni-icons custom-prefix="iconfont" type="icon-jiaoliu" size="70"></uni-icons>
+				<uni-icons custom-prefix="iconfont" type="icon-jiaoliu" size="50"></uni-icons>
 				<br>
 				<font class="icontext">活动交流</font>
 			</li>
 			<li >
-				<uni-icons custom-prefix="iconfont" type="icon-kecheng" size="70"></uni-icons>
+				<uni-icons custom-prefix="iconfont" type="icon-kecheng" size="50"></uni-icons>
 				<br>
 				<font class="icontext">课程</font>
 				
 			</li >
 			<li>
-				<uni-icons custom-prefix="iconfont" type="icon-huiyi" size="70"></uni-icons>
+				<uni-icons custom-prefix="iconfont" type="icon-huiyi" size="50"></uni-icons>
 				<br>
 				<font class="icontext">云乐会议</font>
 			</li>
@@ -130,7 +130,7 @@
 		face:"黑体";
 	}
 	li{
-	margin-left: 20px;
+	margin-left: 63rpx;
 	display: block;
 	float: left;
 	list-style:none;
@@ -154,7 +154,7 @@
 		background-color: #f7ede2;
 		.bannerContent{
 			width: 90%;
-			height: 320upx;
+			height: 320rpx;
 			margin:0 auto;
 			.swiperImg{
 				width: 100%;
