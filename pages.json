@@ -70,12 +70,33 @@
             }
             
         }
+        ,{
+            "path" : "components/usercard/usercard",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/teacher/teacher",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"usingComponents":{
+					
+				}
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#f7ede2",
+		"backgroundColor": "#f7ede2",
 		"usingComponents":{
 		"van-button":"@/wxcomponents/vant/button/index"
 		
@@ -85,25 +106,27 @@
 		"color": "#C0C4CC",
 		"selectedColor": "#fa436a",
 		"borderStyle": "black",
-		"backgroundColor": "#ffffff",
-		
+		"backgroundColor": "#f7ede2",
+		"selectedColor":"#FF7361",
+		"blurEffect":"light",
+		"borderStyle":"white",
 		"list": [
 			{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/logo.png",
-				"selectedIconPath": "static/img/search.png",
+				"iconPath": "static/img/home.png",
+				"selectedIconPath": "static/img/home-selected.png",
 				"text": "主页"
 			},
 			{
 				"pagePath": "pages/explore/explore",
-				"iconPath": "static/logo.png",
-				"selectedIconPath": "static/img/search.png",
+				"iconPath": "static/img/explore.png",
+				"selectedIconPath": "static/img/explore-selected.png",
 				"text": "发现"
 			},
 			{
 				"pagePath": "pages/user/user",
-				"iconPath": "static/logo.png",
-				"selectedIconPath": "static/img/search.png",
+				"iconPath": "static/img/user.png",
+				"selectedIconPath": "static/img/user-selected.png",
 				"text": "我的"
 			}
 			

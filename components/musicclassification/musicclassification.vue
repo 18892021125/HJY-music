@@ -2,7 +2,7 @@
 	<view >
 		<view class="music" v-for="(val,index) in prodata.list" :key="index" @tap="goUrl('./pages/user/user')">
 			<view class="musicitem">
-				<image v-if="val.src" :src="val.src" style="width: 80px; height: 80px; ">
+				<image v-if="val.src" :src="val.src" style="width: 80px; height: 80px;margin-top: auto; ">
 				<view class="textinfo">
 					<br>
 					<font v-if="val.typec" class="typec">{{val.typec}}</font>
@@ -51,10 +51,11 @@
 .playicon{
 	display: inline;
 	
-	margin-bottom: 15px;
-	margin-left: 70px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
 	float: right;
-	padding-top: 20px;
+	
 
 }
 .type{
@@ -76,7 +77,7 @@
 	
 }
 .music{
-	margin-top:8px ;
+	margin-top:15rpx ;
 	background-color: #fffcf3;
 	border-radius: 25px;
 	flex-direction: row;

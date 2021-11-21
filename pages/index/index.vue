@@ -3,9 +3,13 @@
 		<view class="banner">	 
 		<uni-swiper-dot :info="swiper.img" :current="current" :mode="mode" :dotsStyles="dotsstyle">
 			<swiper class="bannerContent"  :autoplay="autoplay" :interval="interval" :duration="duration" @change="change">
-				<swiper-item v-for="(value,index) in swiper.img" :key="index">
+				<swiper-item v-for="(value,index) in swiper.img" :key="index" >
+				
 					<image :src="value" class="swiperImg"></image>
-			
+					<font class="imgtitle">开启传统音乐之旅</font>
+					<font class="imgtext">何家营鼓乐欣赏</font>
+					<image src="../../static/img/musicicon.png" class="swipericon" style="width: 35rpx;height: 35rpx;"></image>
+					
 				</swiper-item>
 			</swiper>
 		</uni-swiper-dot>
@@ -75,8 +79,8 @@
 				swiper:{
 					autoplay:true,
 					img:[
+						'../../static/img/show1.png',
 						'../../static/img/1.jpeg',
-						'../../static/img/2.jpeg',
 						'../../static/img/3.jpeg'
 					]
 				},
@@ -118,6 +122,33 @@
 </script>
 
 <style lang="scss">
+	swiper-item{
+		position: relative;
+		display: flex;
+		.imgtitle{
+			position: absolute;
+			top: 40upx;
+			left:30upx;
+			font-weight: bold;
+			color: red;
+			
+			font-size: 36rpx;
+			
+		}
+		.imgtext{
+			position: absolute;
+			top: 90upx;
+			left:65upx;
+			color: red;
+			
+		}
+		.swipericon{
+			position: absolute;
+			top: 90rpx;
+			left:30upx;
+		}
+		
+	}
 	
 	.content {
 		display:block;
@@ -150,11 +181,11 @@
 		width: 100vw;
 		
 		flex-direction: row;
-		color:#ff557f;
+		
 		background-color: #f7ede2;
 		.bannerContent{
 			width: 90%;
-			height: 320rpx;
+			height: 360rpx;
 			margin:0 auto;
 			.swiperImg{
 				width: 100%;
