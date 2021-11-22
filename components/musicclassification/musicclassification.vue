@@ -54,6 +54,7 @@
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-left: auto;
+	margin-right: 19rpx;
 	float: right;
 	
 
@@ -81,5 +82,7 @@
 	background-color: #fffcf3;
 	border-radius: 25px;
 	flex-direction: row;
+	margin-left: 25rpx;
+	margin-right: 25rpx;
 }
 </style>

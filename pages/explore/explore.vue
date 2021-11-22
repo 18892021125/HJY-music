@@ -22,9 +22,7 @@
 		<view v-if="topNavIndex==2">
 		<follow></follow>
 		</view>	
-		<view style="height: 600px;">
-			
-		</view>
+		
 	</view>
 </template>
 

@@ -2,9 +2,9 @@
 	<view class="index">
 	
 		<uni-search-bar placeholder="搜索" :radius="100" :class="searchbar" @confirm="search" ></uni-search-bar>
-		<scroll-view>
+		
 			<usercard :prodata="follows"></usercard>
-		</scroll-view>
+	
 		
 	</view>
 </template>

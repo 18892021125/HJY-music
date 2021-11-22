@@ -20,9 +20,11 @@
 		<view class="banner">
 			
 			<li >
-				<uni-icons custom-prefix="iconfont" type="icon-zhibo" size="50"></uni-icons>
+				<view @tap="goUrl('../zhibo/zhibo')">
+				<uni-icons custom-prefix="iconfont" type="icon-zhibo" size="50" ></uni-icons>
 				<br> 
 				<font class="icontext">直播间</font>
+				</view>
 			</li>
 			
 			<li >
@@ -87,17 +89,17 @@
 				music:{
 					title:"音乐信息",
 					list:[
-						{typec:"木管乐器1",typee:"Woodwind instrument1",src:"../../static/img/search.png"},
-						{typec:"木管乐器2",typee:"Woodwind instrument2",src:"../../static/img/search.png"},
-						{typec:"木管乐器3",typee:"Woodwind instrument3",src:"../../static/img/search.png"},
-						{typec:"木管乐器4",typee:"Woodwind instrument4",src:"../../static/img/search.png"},
-						{typec:"木管乐器5",typee:"Woodwind instrument5",src:"../../static/img/search.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/search.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/search.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/search.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/search.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/search.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/search.png"}
+						{typec:"木管乐器1",typee:"Woodwind instrument1",src:"../../static/img/follow1.png"},
+						{typec:"木管乐器2",typee:"Woodwind instrument2",src:"../../static/img/follow1.png"},
+						{typec:"木管乐器3",typee:"Woodwind instrument3",src:"../../static/img/follow1.png"},
+						{typec:"木管乐器4",typee:"Woodwind instrument4",src:"../../static/img/follow1.png"},
+						{typec:"木管乐器5",typee:"Woodwind instrument5",src:"../../static/img/follow1.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"}
 					]
 				},
 			}
@@ -116,7 +118,12 @@
 		methods: {
 		change(e) {
 		            this.current = e.detail.current;
-		        }
+		        },
+		goUrl : function (str){
+			uni.navigateTo({
+				url: str
+			});
+		},
 		}
 	}
 </script>
