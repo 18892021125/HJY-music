@@ -3,7 +3,7 @@ page {
   background-color: #f3f3f3;
   font-size: 28rpx;
   box-sizing: border-box;
-  color: #333;
+  
   letter-spacing: 0;
   word-wrap: break-word;
 }
@@ -59,9 +59,9 @@ textarea,input{font-size: 28rpx;};
 .flex_col.flex_col_6>view{width: 16.66666%;}
 
 /* 字体颜色 */
-.color_333 {color: #333;}
-.color_666 {color: #666;}
-.color_999 {color: #999;}
+.color_333 {color: #ff0000;}
+.color_666 {color: #ffff00;}
+.color_999 {color: #ffff7f;}
 .color_ccc {color: #ccc;}
 .color_fff {color: #fff;}
 .color_6dc{color: #6dca6d;}

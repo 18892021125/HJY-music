@@ -15,11 +15,11 @@
 			 			<image class='le-img' :src='item' :class="{'le-active':swiper.index == index}"></image>
 						<image class='browsenum' src="/static/img/browsenum.png" :class="{'bn-active':swiper.index==index}"></image>
 						
-						<font class="browsenumval">3.6K</font>
+						<font class="browsenumval":style="">3.6K</font>
 						<font class="instrumentname">16弦竖琴</font>
 						<image class="storeheadpicture" src="/static/img/follow1.png" :class="{'le-active':swiper.index==index}"></image>
 						<view class="storeinfo">
-							<text class="storename" >班士顿专卖店</text>
+							<font class="storename" >班士顿专卖店</font>
 						</view>
 					</swiper-item>
 			 	</swiper> 
@@ -102,7 +102,7 @@
 					bottom: 0;
 					left: 0;
 					height: 65%;
-					background-image: linear-gradient(to bottom ,transparent, #FFF);
+					background-image: linear-gradient(to bottom ,transparent, #f7ede2);
 				}
 				
 				> image{
@@ -141,13 +141,10 @@
 				position: absolute;
 				top:50rpx;
 				left:40rpx;
-				transform: scale(0.9);
-				&.bn-active{
-					
-					transform: scale(1);
-				}
+				
 			}
 			.instrumentname{
+				color: #0000FF;
 				position: absolute;
 				bottom: 140rpx;
 				left:40rpx;
@@ -159,28 +156,22 @@
 				position: absolute;
 				bottom: 60rpx;
 				left: 130rpx;
+				
 			}
 			.storename{
-				color:"#ffffff";
+				color:"#ff007f" !important;
 				font-size: 28rpx;
 				font-weight: bold;
-				font-family: pfj;
+				
 				
 			}
 			.storeheadpicture{
 				position: absolute;
-				bottom: 55rpx;
-				left:55rpx;
+				bottom: 35rpx;
+				left:35rpx;
 				height: 90rpx;
 				width: 90rpx;
-				transform: scale(0.9);
-				display: block;
-				transition: transform 0.3s ease-in-out 0s;
-				&.le-active {
-					transform: scale(1);
-					bottom: 35rpx;
-					left:35rpx;
-				}
+				
 				
 			}
 			.browsenumval{
@@ -194,13 +185,11 @@
 				width: 100%;
 				height: 100%;
 				display: block;
-				transform: scale(0.9);
-				transition: transform 0.3s ease-in-out 0s;
+				
 				border-radius: 4px;
-		
-				&.le-active {
-					transform: scale(1);
-				}
+				padding-right: 10rpx;
+				padding-left: 10rpx;
+				
 			}
 		
 		}

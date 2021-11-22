@@ -18,5 +18,7 @@
 	@import "/wxcomponents/vant/common/index.wxss";
 	@import "/wxcomponents/vant/tabbar-item/index.wxss";
 	@import "/wxcomponents/vant/tabbar/index.wxss";
+	@import "/wxcomponents/vant/tab/index.wxss";
+	@import "/wxcomponents/vant/tabs/index.wxss";
 	@import "/static/iconfont.css";
 </style>

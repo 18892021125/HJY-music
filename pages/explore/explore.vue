@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="index">
 		<view class="title" :class="topNavStyle.class" :style="topNavStyle.style">
 			<view class="flex_col">
 				<view class="box1"></view>
@@ -15,6 +15,11 @@
 		</view>
 		<view v-if="topNavIndex==0">
 		<card-swiper ></card-swiper>
+		<view class="mailshowinfo">
+			<font class="mailtitle">精选好物</font>
+			<font class="viewall">View All</font>
+		</view>
+		<goodscard :prodata="goods"></goodscard>
 		</view>
 		<view v-if="topNavIndex==1">
 		<jingxuan></jingxuan>
@@ -30,6 +35,7 @@
 	import cardSwiper from '@/components/gradientnav/gradientnav';
 	import jingxuan from '@/components/jingxuan/jingxuan';
 	import follow from '@/components/follow/follow';
+	import goodscard from '@/components/goodscard/goodscard'
 	export default {
 		data() {
 			
@@ -37,7 +43,20 @@
 				topNavIndex:0,
 				topNavArr:['商城','精选','关注'],
 				pageScrollTop:0,	// 页面滚动距离
+				goods:{
+					title:"商品信息",
+					list:[
+						{name:"木管乐器1",storename:"Woodwind instrument1",src:"../../static/img/muguan.png",cost:999},
+						{name:"木管乐器2",storename:"Woodwind instrument2",src:"../../static/img/muguan.png",cost:999},
+						{name:"木管乐器3",storename:"Woodwind instrument3",src:"../../static/img/muguan.png",cost:999},
+						{name:"木管乐器4",storename:"Woodwind instrument4",src:"../../static/img/muguan.png",cost:999},
+						{name:"木管乐器4",storename:"Woodwind instrument4",src:"../../static/img/muguan.png",cost:999},
+						{name:"木管乐器4",storename:"Woodwind instrument4",src:"../../static/img/muguan.png",cost:999},
+						
+					]
+				},
 			}
+			
 		},
 		components:{
 			cardSwiper
@@ -120,7 +139,7 @@
 		}
 		
 		&.style2{
-			color: #FFF;
+			color: #55007f;
 			background-color:#5555ff;
 			
 			.tab{
@@ -132,6 +151,26 @@
 			}
 		}
 	}
+	.mailshowinfo{
+		font-weight: bold;
+		font-size: 36rpx;
+		margin-top:80rpx;
+		margin-left: 60rpx;
 	
+		
+	}
+	.viewall{
+		
+		display: inline;
+		font-size: 10rpx;
+		font-weight: lighter;
+		margin-top:5rpx ;
+		margin-left: auto;
+		margin-right: 45rpx;
+		float: right;
+	}
+	.index{
+		background-color:#f7ede2 ;
+	}
 
 </style>

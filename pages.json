@@ -57,7 +57,11 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"usingComponents":{
+					"van-tab":"@/wxcomponents/vant/tab/index",
+					"van-tabs":"@/wxcomponents/vant/tabs/index"
+				}
             }
             
         }
@@ -100,6 +104,61 @@
             }
             
         }
+        ,{
+            "path" : "components/goodscard/goodscard",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/jingxuangundong/jingxuangundong",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/jingxuan/tuijian",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/jingxuan/jiaoliu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/jingxuan/yanchu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "components/jingxuan/yuanchuang",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -107,7 +166,8 @@
 		"navigationBarBackgroundColor": "#f7ede2",
 		"backgroundColor": "#f7ede2",
 		"usingComponents":{
-		"van-button":"@/wxcomponents/vant/button/index"
+		"van-button":"@/wxcomponents/vant/button/index",
+		"van-tab":"@/wxcomponents/vant/tab/index"
 		
 	}
 	},
