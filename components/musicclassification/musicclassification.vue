@@ -2,7 +2,7 @@
 	<view >
 		<view class="music" v-for="(val,index) in prodata.list" :key="index" @tap="goUrl('./pages/user/user')">
 			<view class="musicitem">
-				<image v-if="val.src" :src="val.src" style="width: 80px; height: 80px;margin-top: auto; ">
+				<image v-if="val.src" :src="val.src" style="width: 70px; height: 70px;margin-top: 15rpx;margin-left: 15rpx;margin-bottom: 15rpx; ">
 				<view class="textinfo">
 					<br>
 					<font v-if="val.typec" class="typec">{{val.typec}}</font>

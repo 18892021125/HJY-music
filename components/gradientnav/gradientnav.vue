@@ -11,8 +11,17 @@
 				<view style="height: 44px;"></view>
 			 	<swiper class="swiper" :previous-margin="swiper.margin" :next-margin='swiper.margin' :circular="true" @change="swiperChange">
 			 		<swiper-item v-for="(item,index) in swiper.list" :key="index">
+						
 			 			<image class='le-img' :src='item' :class="{'le-active':swiper.index == index}"></image>
-			 		</swiper-item>
+						<image class='browsenum' src="/static/img/browsenum.png" :class="{'bn-active':swiper.index==index}"></image>
+						
+						<font class="browsenumval">3.6K</font>
+						<font class="instrumentname">16弦竖琴</font>
+						<image class="storeheadpicture" src="/static/img/follow1.png" :class="{'le-active':swiper.index==index}"></image>
+						<view class="storeinfo">
+							<text class="storename" >班士顿专卖店</text>
+						</view>
+					</swiper-item>
 			 	</swiper> 
 			 </view>
 		</view>
@@ -50,6 +59,15 @@
 </script>
 
 <style lang="scss">
+	swiper-item{
+		position: relative;
+		display: flex;
+		.browsenum{
+			position: absolute;
+			
+		}
+	}
+	
 .top-swiper{
 		margin-bottom: 30rpx; 
 		
@@ -112,11 +130,66 @@
 			width: 100%;
 			height: auto;
 		}
+			
 		
 		.swiper {
 			height: 600rpx;
 			margin: 0 20rpx;
-		
+			.browsenum{
+				width: 30rpx;
+				height: 20rpx;
+				position: absolute;
+				top:50rpx;
+				left:40rpx;
+				transform: scale(0.9);
+				&.bn-active{
+					
+					transform: scale(1);
+				}
+			}
+			.instrumentname{
+				position: absolute;
+				bottom: 140rpx;
+				left:40rpx;
+				font-weight: bold;
+				font-size: 36rpx;
+				
+			}
+			.storeinfo{
+				position: absolute;
+				bottom: 60rpx;
+				left: 130rpx;
+			}
+			.storename{
+				color:"#ffffff";
+				font-size: 28rpx;
+				font-weight: bold;
+				font-family: pfj;
+				
+			}
+			.storeheadpicture{
+				position: absolute;
+				bottom: 55rpx;
+				left:55rpx;
+				height: 90rpx;
+				width: 90rpx;
+				transform: scale(0.9);
+				display: block;
+				transition: transform 0.3s ease-in-out 0s;
+				&.le-active {
+					transform: scale(1);
+					bottom: 35rpx;
+					left:35rpx;
+				}
+				
+			}
+			.browsenumval{
+				position: absolute;
+				top:45rpx;
+				left:80rpx;
+				font-weight: bold;
+				font-size: 19rpx;
+			}
 			.le-img {
 				width: 100%;
 				height: 100%;

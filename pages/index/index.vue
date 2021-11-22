@@ -89,17 +89,17 @@
 				music:{
 					title:"音乐信息",
 					list:[
-						{typec:"木管乐器1",typee:"Woodwind instrument1",src:"../../static/img/follow1.png"},
-						{typec:"木管乐器2",typee:"Woodwind instrument2",src:"../../static/img/follow1.png"},
-						{typec:"木管乐器3",typee:"Woodwind instrument3",src:"../../static/img/follow1.png"},
-						{typec:"木管乐器4",typee:"Woodwind instrument4",src:"../../static/img/follow1.png"},
-						{typec:"木管乐器5",typee:"Woodwind instrument5",src:"../../static/img/follow1.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/follow1.png"}
+						{typec:"木管乐器1",typee:"Woodwind instrument1",src:"../../static/img/muguan.png"},
+						{typec:"木管乐器2",typee:"Woodwind instrument2",src:"../../static/img/muguan.png"},
+						{typec:"木管乐器3",typee:"Woodwind instrument3",src:"../../static/img/muguan.png"},
+						{typec:"木管乐器4",typee:"Woodwind instrument4",src:"../../static/img/muguan.png"},
+						{typec:"木管乐器5",typee:"Woodwind instrument5",src:"../../static/img/muguan.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
+						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"}
 					]
 				},
 			}
@@ -147,6 +147,7 @@
 			top: 90upx;
 			left:65upx;
 			color: red;
+			font-family: pfj;
 			
 		}
 		.swipericon{
