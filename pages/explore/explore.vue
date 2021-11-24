@@ -35,7 +35,8 @@
 	import cardSwiper from '@/components/gradientnav/gradientnav';
 	import jingxuan from '@/components/jingxuan/jingxuan';
 	import follow from '@/components/follow/follow';
-	import goodscard from '@/components/goodscard/goodscard'
+	import goodscard from '@/components/goodscard/goodscard';
+	import tuijiancard from '@/components/tuijiancard/tuijiancard';
 	export default {
 		data() {
 			
@@ -107,7 +108,7 @@
 		height: auto;
 		padding-top: var(--status-bar-height);
 		z-index: 10;
-		background-color: rgba(247, 237, 226, 1.0);
+		background-color: rgba(255, 255, 255, 1.0);
 		color: rgba(255,255,255,0.8);
 		
 		&>view{
@@ -170,7 +171,7 @@
 		float: right;
 	}
 	.index{
-		background-color:#f7ede2 ;
+		background-color:#ffffff ;
 	}
 
 </style>

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "滚动渐变的顶部导航栏",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "goodscard": "/components/goodscard/goodscard",
+    "jingxuan": "/components/jingxuan/jingxuan",
+    "follow": "/components/follow/follow",
+    "card-swiper": "/components/gradientnav/gradientnav"
+  }
+}

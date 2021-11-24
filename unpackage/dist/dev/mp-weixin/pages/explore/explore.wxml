@@ -1,0 +1,34 @@
+<view class="index">
+    <view class="{{['title',topNavStyle.class]}}" style="{{(topNavStyle.style)}}">
+        <view class="flex_col">
+            <view class="box1"></view>
+            <view class="flex_grow flex_col flex_center tab">
+                <block wx:for="{{topNavArr}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+                    <view class="{{[(topNavIndex==index)?'active':'']}}" data-index="{{index}}" data-event-opts="{{[['tap',[['changeTopNav',['$event']]]]]}}" bindtap="__e">{{item}}</view>
+                </block>
+            </view>
+            <view class="box1 align_r"></view>
+        </view>
+    </view>
+    <block wx:if="{{topNavIndex==0}}">
+        <view>
+            <card-swiper vue-id="52245298-1" bind:__l="__l"></card-swiper>
+            <view class="mailshowinfo">
+                <font class="mailtitle" vue-id="52245298-2" bind:__l="__l" vue-slots="{{['default']}}">精选好物</font>
+                <font class="viewall" vue-id="52245298-3" bind:__l="__l" vue-slots="{{['default']}}">View All</font>
+            </view>
+            <goodscard vue-id="52245298-4" prodata="{{goods}}" bind:__l="__l"></goodscard>
+        </view>
+    </block>
+    <block wx:if="{{topNavIndex==1}}">
+        <view>
+            <jingxuangundong></jingxuangundong>
+            <jingxuan vue-id="52245298-5" bind:__l="__l"></jingxuan>
+        </view>
+    </block>
+    <block wx:if="{{topNavIndex==2}}">
+        <view>
+            <follow vue-id="52245298-6" bind:__l="__l"></follow>
+        </view>
+    </block>
+</view>

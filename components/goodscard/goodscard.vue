@@ -22,15 +22,21 @@
 
 <script>
 	export default {
-		props:{
-			prodata: {
-				type: String,
-				default: []
-			},
-		},
+		
 		data() {
 			return {
-				
+				prodata:{
+					title:"商品信息",
+					list:[
+						{name:"木管乐器1",storename:"Woodwind instrument1",src:"../../static/img/muguan.png",cost:999},
+						{name:"木管乐器2",storename:"Woodwind instrument2",src:"../../static/img/muguan.png",cost:999},
+						{name:"木管乐器3",storename:"Woodwind instrument3",src:"../../static/img/muguan.png",cost:999},
+						{name:"木管乐器4",storename:"Woodwind instrument4",src:"../../static/img/muguan.png",cost:999},
+						{name:"木管乐器4",storename:"Woodwind instrument4",src:"../../static/img/muguan.png",cost:999},
+						{name:"木管乐器4",storename:"Woodwind instrument4",src:"../../static/img/muguan.png",cost:999},
+						
+					]
+				}
 			}
 		},
 		methods: {

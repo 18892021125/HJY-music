@@ -1,0 +1,4 @@
+<view class="index">
+    <uni-search-bar class="{{[searchbar]}}" vue-id="d75f433c-1" placeholder="搜索" radius="{{100}}" data-event-opts="{{[['^confirm',[['search']]]]}}" bind:confirm="__e" bind:__l="__l"></uni-search-bar>
+    <usercard vue-id="d75f433c-2" prodata="{{follows}}" bind:__l="__l"></usercard>
+</view>

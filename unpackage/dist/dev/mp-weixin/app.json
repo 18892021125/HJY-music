@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/explore/explore",
+    "components/gradientnav/gradientnav",
+    "pages/zhibo/zhibo",
+    "components/jingxuan/tuijian",
+    "components/jingxuan/jiaoliu",
+    "components/jingxuan/yanchu",
+    "components/jingxuan/yuanchuang",
+    "components/teacher/teacher",
+    "components/goodscard/goodscard",
+    "components/jingxuan/jingxuan",
+    "components/follow/follow",
+    "components/jingxuangundong/jingxuangundong"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#f7ede2",
+    "backgroundColor": "#f7ede2"
+  },
+  "tabBar": {
+    "color": "#C0C4CC",
+    "selectedColor": "#FF7361",
+    "borderStyle": "white",
+    "backgroundColor": "#f7ede2",
+    "blurEffect": "light",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/home-selected.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/explore/explore",
+        "iconPath": "static/img/explore.png",
+        "selectedIconPath": "static/img/explore-selected.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/user-selected.png",
+        "text": "我的"
+      }
+      
+    ]
+  },
+  "usingComponents": {
+    "van-button": "/wxcomponents/vant/button/index",
+    "van-tab": "/wxcomponents/vant/tab/index",
+    "van-tabs": "/wxcomponents/vant/tabs/index"
+  }
+}

@@ -1,0 +1,39 @@
+
+.followinfo{
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.moreinfoicon{
+	display: inline;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	float: right;
+}
+.type{
+	color: #FF6034;
+	face:"黑体";
+}
+.name{
+	color: #000000;
+	font-weight: bold;
+}
+.sign{
+	color: #969799;
+	font-size: small;
+}
+.followitem{
+	display: flex;
+	flex-direction: row;
+}
+.followuser{
+	margin-left: 15rpx;
+	margin-right:15rpx ;
+	margin-top:15rpx ;
+	background-color: #fffcf3;
+	border-radius: 25px;
+	flex-direction: row;
+	height: 160rpx;
+}
+
