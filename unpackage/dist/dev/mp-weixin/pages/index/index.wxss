@@ -55,7 +55,7 @@ swiper-item .swipericon {
 }
 .icontext {
   color: #FF6034;
-  face: "黑体";
+
 }
 ._li {
   margin-left: 63rpx;
@@ -73,7 +73,7 @@ swiper-item .swipericon {
 .index {
   width: 100vw;
   flex-direction: row;
-  background-color: #f7ede2;
+  background-color: #ffe8e6;
 }
 .index .bannerContent {
   width: 90%;
@@ -94,7 +94,7 @@ swiper-item .swipericon {
   margin-bottom: 50rpx;
 }
 .banner {
-  background-color: #f7ede2;
+  background-color: #ffe8e6;
   display: flex;
 }
 .text-area {

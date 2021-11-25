@@ -40,7 +40,7 @@
 <style lang="scss">
 	
 	.index{
-		background-color:#f7ede2;
+		background-color:#ffe8e6;
 		padding-top: 60rpx;
 	}
 </style>

@@ -102,7 +102,7 @@
 					bottom: 0;
 					left: 0;
 					height: 65%;
-					background-image: linear-gradient(to bottom ,transparent, #f7ede2);
+					background-image: linear-gradient(to bottom ,transparent, #ffe8e6);
 				}
 				
 				> image{

@@ -5,28 +5,23 @@
     "pages/explore/explore",
     "components/gradientnav/gradientnav",
     "pages/zhibo/zhibo",
-    "components/jingxuan/tuijian",
-    "components/jingxuan/jiaoliu",
-    "components/jingxuan/yanchu",
-    "components/jingxuan/yuanchuang",
-    "components/teacher/teacher",
-    "components/goodscard/goodscard",
+    "components/tuijiancard/tuijiancard",
+    "components/jingxuancard/jingxuancard",
     "components/jingxuan/jingxuan",
-    "components/follow/follow",
-    "components/jingxuangundong/jingxuangundong"
+    "components/follow/follow"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#f7ede2",
-    "backgroundColor": "#f7ede2"
+    "navigationBarBackgroundColor": "#ffe8e6",
+    "backgroundColor": "#ffe8e6"
   },
   "tabBar": {
     "color": "#C0C4CC",
-    "selectedColor": "#FF7361",
+    "selectedColor": "#fa436a",
     "borderStyle": "white",
-    "backgroundColor": "#f7ede2",
+    "backgroundColor": "#ffe8e6",
     "blurEffect": "light",
     "list": [
       {
@@ -47,12 +42,11 @@
         "selectedIconPath": "static/img/user-selected.png",
         "text": "我的"
       }
-      
     ]
   },
   "usingComponents": {
-    "van-button": "/wxcomponents/vant/button/index",
-    "van-tab": "/wxcomponents/vant/tab/index",
-    "van-tabs": "/wxcomponents/vant/tabs/index"
+    "van-button": "wxcomponents/vant/button/index",
+    "van-tab": "wxcomponents/vant/tab/index",
+    "van-tabs": "wxcomponents/vant/tabs/index"
   }
 }

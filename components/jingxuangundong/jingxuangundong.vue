@@ -1,22 +1,16 @@
 <template>
-	<view>
-		<view class="top-swiper">
+	<view class="index">
+			
+			<scroll-view class="scroll-view_H" scroll-x="true" @scroll="scroll" scroll-left="0">
+				<view class="scrollitem" v-for="(val,index) in gundong.list" :key="index" @tap="goUrl('./pages/user/user')">
+					<image class="scrollimg" src ="../../static/img/2.jpeg" ></image>
+					<view v-if="val.titleone" class="info">
+						<text >{{val.titleone}}<br>{{val.titletow}}</text>
+					</view>
+				</view>
+			</scroll-view>
 		
-			 <view class="box">
-				
-			 	<swiper class="swiper" :previous-margin="swiper.margin" :next-margin='swiper.margin'  @change="swiperChange">
-			 		<swiper-item v-for="(item,index) in swiper.list" :key="index">
-						
-			 			<image class='le-img' :src='item' :class="{'le-active':swiper.index == index}"></image>
-						<view class="imginfo">
-							<text class="imgtitle" >丝竹鼓乐沪上盛典</text>
-							<br>
-							<text class="more">more></text>
-						</view>
-					</swiper-item>
-			 	</swiper> 
-			 </view>
-		</view>
+
 	</view>
 </template>
 
@@ -24,80 +18,79 @@
 	export default {
 		data() {
 			return {
-				swiper: {
-					margin: "150rpx",
-					index: 0,
-					list: [
-						"/static/img/douyin/7.jpg",
-						"/static/img/douyin/19.png",
-						"/static/img/douyin/20.png",
+			scrollTop: 0,
+			old: {
+				scrollTop: 0
+			},
+			gundong:{
+					title:"滚动信息",
+					list:[
+						{titleone:"丝竹鼓乐",titletow:"沪上盛典",src:"../../static/img/2.jpeg"},
+						{titleone:"民族音乐",titletow:"真滴牛批",src:"../../static/img/2.jpeg"},
+						{titleone:"丝竹鼓乐",titletow:"真滴·牛B",src:"../../static/img/2.jpeg"},
+						{titleone:"民族·音乐",titletow:"牛~~~~B",src:"../../static/img/2.jpeg"},
+						
+						
 					]
 				}
-			}
-		},
-		components: {
-	
-		},
-		mounted() {
-	
-		},
+		}
+	},
 		methods: {
-			//swiper滑动事件
-			swiperChange: function(e) {
-				this.swiper.index = e.detail.current;
+			scroll: function(e) {
+				console.log(e)
+				this.old.scrollTop = e.detail.scrollTop
 			},
 		}
-	}
+}
+
 </script>
 
 <style lang="scss">
-
-	.imginfo{
-		position: absolute;
-		top:20rpx;
-		left:40rpx;
+	.scrollimg{
 		
-		.imgtitle{
-			font-size:25rpx ;
-			font-weight: bold;
-			color: "#5555ff";
-		}
+		position: relative;
+		width: 500rpx;
+		height: 300rpx;
+		border-radius: 35rpx;
+		margin-left: 35rpx;
+		
+		padding-bottom: 0;
+	}
+	
+		
+		
+	.scroll-view_H{
+		
+		background-color: #000000;
+	}
+	.scrollitem{
+	background-color: #ffe8e6;
+	display: inline-block;
+	
 	
 	}
-	.top-swiper{
-			
-			background-color:#ffe8e6 ;
-			
-			.box{
-				background-color:#ffe8e6 ;
-				
-				
-				z-index: 1;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 300rpx;
-			}
-				
-			
-				
-			.le-img {
-				width: 400rpx;
-				height: 300rpx;
-				display: block;
-				background-color:#ffe8e6 ;
-				margin-left:5rpx ;
-				margin-right:5rpx;
-			
-				
-				border-radius:50rpx;
-			}
-			.swiper {
-				
-				
+	.info{
+		position: relative;
+		left: 100rpx;
 		
-			
-			}
-		}
+		bottom:250rpx;
+		font-weight: bold;
+		color: #FFFFFF;
+		font-size: 40rpx;
+	
+		width: 200rpx;
+		
+	}
+	
+	
+		
+	
+	.scroll-view_H {
+		white-space: nowrap;
+		height: 350rpx;
+	}
+	
+	
+	
 </style>
 

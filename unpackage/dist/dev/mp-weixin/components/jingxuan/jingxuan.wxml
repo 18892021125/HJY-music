@@ -1,1 +1,17 @@
-<view class="index"><view class="_br"></view><view class="_br"></view><uni-search-bar vue-id="3c850d7c-1" placeholder="乐谱搜索" radius="{{100}}" data-event-opts="{{[['^confirm',[['search']]]]}}" bind:confirm="__e" bind:__l="__l"></uni-search-bar><font class="guesslike" vue-id="3c850d7c-2" bind:__l="__l" vue-slots="{{['default']}}">猜你喜欢</font><jingxuangundong vue-id="3c850d7c-3" bind:__l="__l"></jingxuangundong><van-tabs bind:input="__e" vue-id="3c850d7c-4" value="{{active}}" data-event-opts="{{[['^input',[['__set_model',['','active','$event',[]]]]]]}}" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}"><van-tab vue-id="{{('3c850d7c-5')+','+('3c850d7c-4')}}" title="推荐" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">内容 1</van-tab><van-tab vue-id="{{('3c850d7c-6')+','+('3c850d7c-4')}}" title="交流" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">内容 2</van-tab><van-tab vue-id="{{('3c850d7c-7')+','+('3c850d7c-4')}}" title="演出" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">内容 3</van-tab><van-tab vue-id="{{('3c850d7c-8')+','+('3c850d7c-4')}}" title="原创" data-com-type="wx" bind:__l="__l" vue-slots="{{['default']}}">内容 4</van-tab></van-tabs></view>
+<view class="index">
+    <uni-search-bar vue-id="3c850d7c-1" placeholder="乐谱搜索" radius="{{100}}" data-event-opts="{{[['^confirm',[['search']]]]}}" bind:confirm="__e" bind:__l="__l"></uni-search-bar>
+    <view class="guesslike">
+        <font vue-id="3c850d7c-2" bind:__l="__l" vue-slots="{{['default']}}">猜你喜欢</font>
+    </view>
+    <jingxuangundong vue-id="3c850d7c-3" bind:__l="__l"></jingxuangundong>
+    <view class="uni-padding-wrap uni-common-mt">
+        <uni-segmented-control vue-id="3c850d7c-4" current="{{current}}" values="{{items}}" style-type="{{styleType}}" active-color="{{activeColor}}" data-event-opts="{{[['^clickItem',[['onClickItem']]]]}}" bind:clickItem="__e" bind:__l="__l"></uni-segmented-control>
+    </view>
+    <view class="content">
+        <block wx:if="{{current===0}}">
+            <view>
+                <jingxuancard vue-id="3c850d7c-5" bind:__l="__l"></jingxuancard>
+            </view>
+        </block>
+    </view>
+</view>

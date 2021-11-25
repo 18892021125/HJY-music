@@ -1,4 +1,3 @@
-/* components/teacher/teacher.wxss */
 .quitbutton{
     position: relative;
     margin-bottom: auto;

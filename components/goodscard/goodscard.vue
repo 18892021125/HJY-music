@@ -45,7 +45,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 .textinfo{
 	margin-left: 20px;
 	display: flex;

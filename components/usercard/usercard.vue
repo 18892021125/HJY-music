@@ -42,7 +42,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss"> 
 .followinfo{
 	margin-left: 20px;
 	display: flex;

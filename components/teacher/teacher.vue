@@ -62,6 +62,7 @@
 
 <script>
 	export default {
+		name:"teacher",
 		data() {
 			return {
 				
@@ -73,7 +74,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.quitbutton{
 		position: relative;
 		margin-bottom: auto;

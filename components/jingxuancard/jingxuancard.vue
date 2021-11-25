@@ -45,18 +45,34 @@
 			}
 		},
 		methods: {
-			
+			onClickItem(e) {
+				if (this.current !== e.currentIndex) {
+					this.current = e.currentIndex
+				}
+			},
+			styleChange(e) {
+				if (this.styleType !== e.detail.value) {
+					this.styleType = e.detail.value
+				}
+			},
+			colorChange(e) {
+				if (this.styleType !== e.detail.value) {
+					console.log(e.detail.value);
+					this.activeColor = e.detail.value
+				}
+			}
 		}
 	}
 </script>
 
-<style>
+<style lang="scss">
 .jxcardmain{
-	display: block;
+	position: absolute;
+	background-color: #ffe8e6;
 }
 .jxcard{
 	padding-left: 15rpx;
-	
+	margin-top: 15rpx;
 	text-align: center;
 	width: min-content;
 	float: left;

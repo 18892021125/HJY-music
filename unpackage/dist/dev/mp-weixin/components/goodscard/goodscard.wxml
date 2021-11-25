@@ -1,1 +1,27 @@
-<view><block wx:for="{{prodata.list}}" wx:for-item="val" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['goUrl',['./pages/user/user']]]]]}}" class="goods" bindtap="__e"><view class="goodsitem"><block wx:if="{{val.src}}"><image style="width:70px;height:70px;margin-top:15rpx;margin-left:15rpx;margin-bottom:15rpx;" src="{{val.src}}"></image></block><view class="textinfo"><view class="_br"></view><block wx:if="{{val.name}}"><font class="goodsname" vue-id="{{'7ef3d0b4-1-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">{{val.name}}</font></block><block wx:if="{{val.storename}}"><font class="storename" vue-id="{{'7ef3d0b4-2-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">{{val.storename}}</font></block></view><block wx:if="{{val.cost}}"><view class="costcard"><font class="type" vue-id="{{'7ef3d0b4-3-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">$：</font><font vue-id="{{'7ef3d0b4-4-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">{{val.cost}}</font><font vue-id="{{'7ef3d0b4-5-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">元</font></view></block></view></view></block></view>
+<view>
+    <block wx:for="{{prodata.list}}" wx:for-item="val" wx:for-index="index" wx:key="index">
+        <view data-event-opts="{{[['tap',[['goUrl',['./pages/user/user']]]]]}}" class="goods" bindtap="__e">
+            <view class="goodsitem">
+                <block wx:if="{{val.src}}">
+                    <image style="width:70px;height:70px;margin-top:15rpx;margin-left:15rpx;margin-bottom:15rpx;" src="{{val.src}}"></image>
+                </block>
+                <view class="textinfo">
+                    <view class="_br"></view>
+                    <block wx:if="{{val.name}}">
+                        <font class="goodsname" vue-id="{{'7ef3d0b4-1-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">{{val.name}}</font>
+                    </block>
+                    <block wx:if="{{val.storename}}">
+                        <font class="storename" vue-id="{{'7ef3d0b4-2-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">{{val.storename}}</font>
+                    </block>
+                </view>
+                <block wx:if="{{val.cost}}">
+                    <view class="costcard">
+                        <font class="type" vue-id="{{'7ef3d0b4-3-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">$：</font>
+                        <font vue-id="{{'7ef3d0b4-4-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">{{val.cost}}</font>
+                        <font vue-id="{{'7ef3d0b4-5-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">元</font>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </block>
+</view>

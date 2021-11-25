@@ -1,76 +1,124 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.quitbutton {
+  position: relative;
+  margin-bottom: auto;
+  margin-left: 37rpx;
+}
+.kefu {
+  margin-top: 47rpx;
+  padding-left: 50rpx;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 17rpx;
+}
+.optiontextv {
+  margin-top: auto;
+  margin-left: 37rpx;
+  margin-bottom: auto;
+}
+.line {
+  position: relative;
+  margin-top: 37rpx;
+  margin-left: 35rpx;
+  margin-right: 35rpx;
+  margin-bottom: 35rpx;
+  height: 1px;
+  background-color: #9194ae;
+  text-align: center;
+  font-size: 16px;
+  color: #9194ae;
+}
+.userindex {
+  height: 100%;
+  background-color: #ffffff;
+}
+.useroption {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  padding-left: 50rpx;
+  padding-top: 50rpx;
+}
+.kefuoptiontext {
+  margin-top: auto;
+  margin-left: 37rpx;
+  margin-bottom: auto;
+}
+.textinfo {
+  padding-left: 47rpx;
+  flex-direction: column;
+  display: flex;
+}
+.optionitem {
+  padding-top: 37rpx;
+  padding-bottom: 37rpx;
+  display: flex;
+  flex-direction: row;
+}
+.username {
+  font-weight: bold;
+  font-family: "Poppins";
+}
 
-.quitbutton{
-	position: relative;
-	margin-bottom: auto;
-	margin-left: 37rpx;
-}
-.kefu{
-	margin-top:47rpx ;
-	padding-left: 50rpx;
-	display: flex;
-	flex-direction: row;
-	padding-bottom: 17rpx;
-}
-.optiontextv{
-	margin-top:auto ;
-	margin-left: 37rpx;
-	margin-bottom: auto;
-}
-.line{
-	position: relative;
-	
-	margin-top:37rpx;
-	
-	margin-left: 35rpx;
-	margin-right: 35rpx;
-	margin-bottom: 35rpx;
-	height: 1px;
-	background-color: rgba(145, 148, 174, 1.0);
-	text-align: center;
-	font-size: 16px;
-	color: rgba(145, 148, 174, 1.0);
-}
-.userindex{
-	height: 100%;
-	background-color: #ffffff;
-}
-.useroption{
-	display: flex;
-	flex-direction: column;
-	padding-left: 50rpx;
-	padding-top: 20rpx;
-	padding-bottom: 20rpx;
-}
-.userinfo{
-	display: flex;
-	flex-direction: row;
-	padding-left:50rpx ;
-	padding-top: 50rpx;
-}
-.kefuoptiontext{
-	margin-top:auto ;
-	margin-left: 37rpx;
-	margin-bottom: auto;
-}
-.textinfo{
-	padding-left: 47rpx;
-	flex-direction: column;
-	display: flex;
-}
-.optionitem{
-	padding-top: 37rpx;
-	padding-bottom: 37rpx;
-	display: flex;
-	flex-direction: row;
-}
-.username{
-	font-weight: bold;
-	font-family: "Poppins";
-}
-
-
-.index{
-	background-color: #f7ede2;
-	height: 999rpx;
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.index {
+  background-color: #ffe8e6;
+  height: 999rpx;
 }
 

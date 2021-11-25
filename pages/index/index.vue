@@ -190,7 +190,7 @@
 		
 		flex-direction: row;
 		
-		background-color: #f7ede2;
+		background-color: #ffe8e6;
 		.bannerContent{
 			width: 90%;
 			height: 360rpx;
@@ -214,7 +214,7 @@
 		margin-bottom: 50rpx;
 	}
 	.banner{
-		background-color:#f7ede2 ;
+		background-color:#ffe8e6 ;
 		display: flex;
 	}
 	.text-area {

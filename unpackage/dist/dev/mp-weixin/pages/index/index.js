@@ -104,13 +104,13 @@ var components
 try {
   components = {
     uniSearchBar: function() {
-      return Promise.all(/*! import() | uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar.vue */ 110))
+      return Promise.all(/*! import() | uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar.vue */ 111))
     },
     uniIcons: function() {
-      return Promise.all(/*! import() | uni_modules/uni-icons/components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-icons/components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 121))
+      return Promise.all(/*! import() | uni_modules/uni-icons/components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-icons/components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 122))
     },
     musicclassification: function() {
-      return __webpack_require__.e(/*! import() | components/musicclassification/musicclassification */ "components/musicclassification/musicclassification").then(__webpack_require__.bind(null, /*! @/components/musicclassification/musicclassification.vue */ 129))
+      return __webpack_require__.e(/*! import() | components/musicclassification/musicclassification */ "components/musicclassification/musicclassification").then(__webpack_require__.bind(null, /*! @/components/musicclassification/musicclassification.vue */ 130))
     }
   }
 } catch (e) {
@@ -165,7 +165,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _uniIcons = function _uniIcons() {Promise.all(/*! require.ensure | node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons")]).then((function () {return resolve(__webpack_require__(/*! @dcloudio/uni-ui/lib/uni-icons/uni-icons */ 136));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _uniSwiperDot = function _uniSwiperDot() {__webpack_require__.e(/*! require.ensure | node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot */ "node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot").then((function () {return resolve(__webpack_require__(/*! @dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot */ 144));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _uniSearchBar = function _uniSearchBar() {Promise.all(/*! require.ensure | node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar")]).then((function () {return resolve(__webpack_require__(/*! @dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar */ 151));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _uniIcons = function _uniIcons() {Promise.all(/*! require.ensure | node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons")]).then((function () {return resolve(__webpack_require__(/*! @dcloudio/uni-ui/lib/uni-icons/uni-icons */ 137));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _uniSwiperDot = function _uniSwiperDot() {__webpack_require__.e(/*! require.ensure | node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot */ "node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot").then((function () {return resolve(__webpack_require__(/*! @dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot */ 145));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _uniSearchBar = function _uniSearchBar() {Promise.all(/*! require.ensure | node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar")]).then((function () {return resolve(__webpack_require__(/*! @dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

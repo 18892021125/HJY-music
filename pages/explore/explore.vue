@@ -97,7 +97,7 @@
 	@import "@/lib/global.scss";
 	
 	page{
-		background-color: #fff;
+		background-color: #ffe8e6;
 	}
 	/* 标题栏 */
 	.title{
@@ -108,8 +108,7 @@
 		height: auto;
 		padding-top: var(--status-bar-height);
 		z-index: 10;
-		background-color: rgba(255, 255, 255, 1.0);
-		color: rgba(255,255,255,0.8);
+		
 		
 		&>view{
 			height: 44px;
@@ -171,7 +170,7 @@
 		float: right;
 	}
 	.index{
-		background-color:#ffffff ;
+		background-color:#ffe8e6 ;
 	}
 
 </style>

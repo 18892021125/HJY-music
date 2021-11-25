@@ -40,7 +40,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.jxcard{
 		margin-top: 300rpx;
 		background-color: #ffffff;

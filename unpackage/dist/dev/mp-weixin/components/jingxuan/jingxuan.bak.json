@@ -1,7 +1,9 @@
 {
+  "component": true,
   "usingComponents": {
     "uni-search-bar": "/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar",
-    "jingxuangundong": "/components/jingxuangundong/jingxuangundong"
-  },
-  "component": true
+    "jingxuangundong": "/components/jingxuangundong/jingxuangundong",
+    "jingxuancard": "/components/jingxuancard/jingxuancard",
+    "uni-segmented-control": "/node-modules/@dcloudio/uni-ui/lib/uni-segmented-control/uni-segmented-control"
+  }
 }

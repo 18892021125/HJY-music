@@ -1,1 +1,44 @@
-<view class="index"><view class="banner"><uni-swiper-dot vue-id="8dd740cc-1" info="{{swiper.img}}" current="{{current}}" mode="{{mode}}" dotsStyles="{{dotsstyle}}" bind:__l="__l" vue-slots="{{['default']}}"><swiper class="bannerContent" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" data-event-opts="{{[['change',[['change',['$event']]]]]}}" bindchange="__e"><block wx:for="{{swiper.img}}" wx:for-item="value" wx:for-index="index" wx:key="index"><swiper-item><image class="swiperImg" src="{{value}}"></image><font class="imgtitle" vue-id="{{('8dd740cc-2-'+index)+','+('8dd740cc-1')}}" bind:__l="__l" vue-slots="{{['default']}}">开启传统音乐之旅</font><font class="imgtext" vue-id="{{('8dd740cc-3-'+index)+','+('8dd740cc-1')}}" bind:__l="__l" vue-slots="{{['default']}}">何家营鼓乐欣赏</font><image class="swipericon" style="width:35rpx;height:35rpx;" src="../../static/img/musicicon.png"></image></swiper-item></block></swiper></uni-swiper-dot></view><uni-search-bar vue-id="8dd740cc-4" placeholder="乐谱搜索" radius="{{100}}" data-event-opts="{{[['^confirm',[['search']]]]}}" bind:confirm="__e" bind:__l="__l"></uni-search-bar><view class="banner"><view class="_li"><view data-event-opts="{{[['tap',[['goUrl',['../zhibo/zhibo']]]]]}}" bindtap="__e"><uni-icons vue-id="8dd740cc-5" custom-prefix="iconfont" type="icon-zhibo" size="50" bind:__l="__l"></uni-icons><view class="_br"></view><font class="icontext" vue-id="8dd740cc-6" bind:__l="__l" vue-slots="{{['default']}}">直播间</font></view></view><view class="_li"><uni-icons vue-id="8dd740cc-7" custom-prefix="iconfont" type="icon-jiaoliu" size="50" bind:__l="__l"></uni-icons><view class="_br"></view><font class="icontext" vue-id="8dd740cc-8" bind:__l="__l" vue-slots="{{['default']}}">活动交流</font></view><view class="_li"><uni-icons vue-id="8dd740cc-9" custom-prefix="iconfont" type="icon-kecheng" size="50" bind:__l="__l"></uni-icons><view class="_br"></view><font class="icontext" vue-id="8dd740cc-10" bind:__l="__l" vue-slots="{{['default']}}">课程</font></view><view class="_li"><uni-icons vue-id="8dd740cc-11" custom-prefix="iconfont" type="icon-huiyi" size="50" bind:__l="__l"></uni-icons><view class="_br"></view><font class="icontext" vue-id="8dd740cc-12" bind:__l="__l" vue-slots="{{['default']}}">云乐会议</font></view></view><view><musicclassification vue-id="8dd740cc-13" prodata="{{music}}" bind:__l="__l"></musicclassification></view></view>
+<view class="index">
+    <view class="banner">
+        <uni-swiper-dot vue-id="8dd740cc-1" info="{{swiper.img}}" current="{{current}}" mode="{{mode}}" dotsStyles="{{dotsstyle}}" bind:__l="__l" vue-slots="{{['default']}}">
+            <swiper class="bannerContent" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" data-event-opts="{{[['change',[['change',['$event']]]]]}}" bindchange="__e">
+                <block wx:for="{{swiper.img}}" wx:for-item="value" wx:for-index="index" wx:key="index">
+                    <swiper-item>
+                        <image class="swiperImg" src="{{value}}"></image>
+                        <font class="imgtitle" vue-id="{{('8dd740cc-2-'+index)+','+('8dd740cc-1')}}" bind:__l="__l" vue-slots="{{['default']}}">开启传统音乐之旅</font>
+                        <font class="imgtext" vue-id="{{('8dd740cc-3-'+index)+','+('8dd740cc-1')}}" bind:__l="__l" vue-slots="{{['default']}}">何家营鼓乐欣赏</font>
+                        <image class="swipericon" style="width:35rpx;height:35rpx;" src="../../static/img/musicicon.png"></image>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </uni-swiper-dot>
+    </view>
+    <uni-search-bar vue-id="8dd740cc-4" placeholder="乐谱搜索" radius="{{100}}" data-event-opts="{{[['^confirm',[['search']]]]}}" bind:confirm="__e" bind:__l="__l"></uni-search-bar>
+    <view class="banner">
+        <view class="_li">
+            <view data-event-opts="{{[['tap',[['goUrl',['../zhibo/zhibo']]]]]}}" bindtap="__e">
+                <uni-icons vue-id="8dd740cc-5" custom-prefix="iconfont" type="icon-zhibo" size="50" bind:__l="__l"></uni-icons>
+                <view class="_br"></view>
+                <font class="icontext" vue-id="8dd740cc-6" bind:__l="__l" vue-slots="{{['default']}}">直播间</font>
+            </view>
+        </view>
+        <view class="_li">
+            <uni-icons vue-id="8dd740cc-7" custom-prefix="iconfont" type="icon-jiaoliu" size="50" bind:__l="__l"></uni-icons>
+            <view class="_br"></view>
+            <font class="icontext" vue-id="8dd740cc-8" bind:__l="__l" vue-slots="{{['default']}}">活动交流</font>
+        </view>
+        <view class="_li">
+            <uni-icons vue-id="8dd740cc-9" custom-prefix="iconfont" type="icon-kecheng" size="50" bind:__l="__l"></uni-icons>
+            <view class="_br"></view>
+            <font class="icontext" vue-id="8dd740cc-10" bind:__l="__l" vue-slots="{{['default']}}">课程</font>
+        </view>
+        <view class="_li">
+            <uni-icons vue-id="8dd740cc-11" custom-prefix="iconfont" type="icon-huiyi" size="50" bind:__l="__l"></uni-icons>
+            <view class="_br"></view>
+            <font class="icontext" vue-id="8dd740cc-12" bind:__l="__l" vue-slots="{{['default']}}">云乐会议</font>
+        </view>
+    </view>
+    <view>
+        <musicclassification vue-id="8dd740cc-13" prodata="{{music}}" bind:__l="__l"></musicclassification>
+    </view>
+</view>

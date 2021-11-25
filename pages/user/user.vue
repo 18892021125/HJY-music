@@ -20,9 +20,9 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 .index{
-	background-color: #f7ede2;
+	background-color: #ffe8e6;
 	height: 999rpx;
 }
 </style>
