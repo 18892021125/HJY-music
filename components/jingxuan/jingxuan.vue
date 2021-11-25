@@ -6,14 +6,17 @@
 	
 	<uni-search-bar placeholder="乐谱搜索" :radius="100"  @confirm="search"></uni-search-bar>
 	<font class="guesslike">猜你喜欢</font>
-	<jingxuangundong></jingxuangundong>
 	
-<van-tabs v-model:active="active">
-  <van-tab title="标签 11">666</van-tab>
-  <van-tab title="标签 2">内容 2</van-tab>
-  <van-tab title="标签 3">内容 3</van-tab>
-  <van-tab title="标签 4">内容 4</van-tab>
-</van-tabs>
+	<jingxuangundong></jingxuangundong>
+	<view class="uni-padding-wrap uni-common-mt">
+		<uni-segmented-control :current="current" :values="items" :style-type="styleType"
+			:active-color="activeColor" @clickItem="onClickItem" />
+	</view>
+	<view class="content">
+		<view v-if="current === 0"><text class="content-text"><jingxuancard></jingxuancard></text></view>
+		<view v-if="current === 1"><text class="content-text">选项卡2的内容</text></view>
+		<view v-if="current === 2"><text class="content-text">选项卡3的内容</text></view>
+	</view>
 	
 	</view>
 </template>
@@ -25,10 +28,20 @@
 	import yuanchuang from '@/components/jingxuan/yuanchuang';
 	import yanchu from '@/components/jingxuan/yanchu';
 	import tuijian from '@/components/jingxuan/tuijian';
+	import jingxuancard from '@/components/jingxuancard/jingxuancard';
+	import {uniSegmentedControl} from '@dcloudio/uni-ui'
 	export default {
+		 components: {uniSegmentedControl,
+			jingxuancard,
+			jingxuangundong,
+		 },
 		data() {
 			return {
-			
+			items: ['推荐', '交流', '演出','原创'],
+			current: 0,
+			colorIndex: 0,
+			activeColor: '#ff7361',
+			styleType: 'text',
 			}
 		},
 		setup() {
@@ -36,7 +49,22 @@
 		    return { active };
 		  },
 		methods: {
-			
+			onClickItem(e) {
+							if (this.current !== e.currentIndex) {
+								this.current = e.currentIndex
+							}
+						},
+						styleChange(e) {
+							if (this.styleType !== e.detail.value) {
+								this.styleType = e.detail.value
+							}
+						},
+						colorChange(e) {
+							if (this.styleType !== e.detail.value) {
+								console.log(e.detail.value);
+								this.activeColor = e.detail.value
+							}
+						}
 		
 		}
 	}
@@ -44,18 +72,20 @@
 
 <style lang="scss">
 	page{
-		background-color: #aaaaff;
+		background-color: #F8EEE2;
 	}
 		
-	ul{
-		list-style-type: none;
-		text-align: center;
-		margin:0;
-		
-	}
-	li{
-		display: inline-block;
-		margin:0 10rpx;
-	}
 	
+	.uni-common-mt {
+			margin-top: 30px;
+			text-align: center;
+		}
+	
+	.uni-padding-wrap {
+		// width: 750rpx;
+		padding: 0px 30px;
+	}
+	.content {
+			
+		}
 </style>
