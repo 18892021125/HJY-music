@@ -4,7 +4,7 @@
 		
 			 <view class="box">
 				
-			 	<swiper class="swiper" :previous-margin="swiper.margin" :next-margin='swiper.margin' :circular="true" @change="swiperChange">
+			 	<swiper class="swiper" :previous-margin="swiper.margin" :next-margin='swiper.margin'  @change="swiperChange">
 			 		<swiper-item v-for="(item,index) in swiper.list" :key="index">
 						
 			 			<image class='le-img' :src='item' :class="{'le-active':swiper.index == index}"></image>

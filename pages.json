@@ -24,16 +24,7 @@
             }
             
         }
-        ,{
-            "path" : "components/musicclassification/musicclassification",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-				
-            }
-            
-        },
+        ,
 		{
 		    "path" : "pages/explore/explore",
 		    "style" :                                                                                    
@@ -52,49 +43,10 @@
             }
             
         }
-        ,{
-            "path" : "components/jingxuan/jingxuan",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false,
-				"usingComponents":{
-					"van-tab":"@/wxcomponents/vant/tab/index",
-					"van-tabs":"@/wxcomponents/vant/tabs/index"
-				}
-            }
-            
-        }
-        ,{
-            "path" : "components/follow/follow",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "components/usercard/usercard",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "components/teacher/teacher",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false,
-				"usingComponents":{
-					
-				}
-            }
-            
-        }
+        
+    
+      
+      
         ,{
             "path" : "pages/zhibo/zhibo",
             "style" :                                                                                    
@@ -104,24 +56,7 @@
             }
             
         }
-        ,{
-            "path" : "components/goodscard/goodscard",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "components/jingxuangundong/jingxuangundong",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
+       
         ,{
             "path" : "components/jingxuan/tuijian",
             "style" :                                                                                    
@@ -152,6 +87,15 @@
         
         ,{
             "path" : "components/jingxuan/yuanchuang",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/tuijiancard/tuijiancard",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",

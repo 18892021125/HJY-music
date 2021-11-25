@@ -1,0 +1,40 @@
+
+.textinfo{
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.playicon{
+	display: inline;
+	
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: 19rpx;
+	float: right;
+}
+.type{
+	color: #FF6034;
+	face:"黑体";
+}
+.typec{
+	color: #000000;
+	font-weight: bold;
+}
+.typee{
+	color: #969799;
+	font-size: small;
+}
+.musicitem{
+	display: flex;
+	flex-direction: row;
+}
+.music{
+	margin-top:15rpx ;
+	background-color: #fffcf3;
+	border-radius: 25px;
+	flex-direction: row;
+	margin-left: 25rpx;
+	margin-right: 25rpx;
+}
+

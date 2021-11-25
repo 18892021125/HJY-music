@@ -21,15 +21,25 @@
 
 <script>
 	export default {
-		props:{
-			prodata: {
-				type: String,
-				default: []
-			},
-		},
+	
 		data() {
 			return {
-			
+			prodata:{
+				title:"音乐信息",
+				list:[
+					{typec:"木管乐器1",typee:"Woodwind instrument1",src:"../../static/img/muguan.png"},
+					{typec:"木管乐器2",typee:"Woodwind instrument2",src:"../../static/img/muguan.png"},
+					{typec:"木管乐器3",typee:"Woodwind instrument3",src:"../../static/img/muguan.png"},
+					{typec:"木管乐器4",typee:"Woodwind instrument4",src:"../../static/img/muguan.png"},
+					{typec:"木管乐器5",typee:"Woodwind instrument5",src:"../../static/img/muguan.png"},
+					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
+					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
+					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
+					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
+					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
+					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"}
+				]
+			}
 		}
 	},
 		methods:{

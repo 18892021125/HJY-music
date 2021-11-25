@@ -1,0 +1,76 @@
+
+.quitbutton{
+	position: relative;
+	margin-bottom: auto;
+	margin-left: 37rpx;
+}
+.kefu{
+	margin-top:47rpx ;
+	padding-left: 50rpx;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 17rpx;
+}
+.optiontextv{
+	margin-top:auto ;
+	margin-left: 37rpx;
+	margin-bottom: auto;
+}
+.line{
+	position: relative;
+	
+	margin-top:37rpx;
+	
+	margin-left: 35rpx;
+	margin-right: 35rpx;
+	margin-bottom: 35rpx;
+	height: 1px;
+	background-color: rgba(145, 148, 174, 1.0);
+	text-align: center;
+	font-size: 16px;
+	color: rgba(145, 148, 174, 1.0);
+}
+.userindex{
+	height: 100%;
+	background-color: #ffffff;
+}
+.useroption{
+	display: flex;
+	flex-direction: column;
+	padding-left: 50rpx;
+	padding-top: 20rpx;
+	padding-bottom: 20rpx;
+}
+.userinfo{
+	display: flex;
+	flex-direction: row;
+	padding-left:50rpx ;
+	padding-top: 50rpx;
+}
+.kefuoptiontext{
+	margin-top:auto ;
+	margin-left: 37rpx;
+	margin-bottom: auto;
+}
+.textinfo{
+	padding-left: 47rpx;
+	flex-direction: column;
+	display: flex;
+}
+.optionitem{
+	padding-top: 37rpx;
+	padding-bottom: 37rpx;
+	display: flex;
+	flex-direction: row;
+}
+.username{
+	font-weight: bold;
+	font-family: "Poppins";
+}
+
+
+.index{
+	background-color: #f7ede2;
+	height: 999rpx;
+}
+
