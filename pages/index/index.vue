@@ -15,7 +15,7 @@
 		</uni-swiper-dot>
 		</view>
 		
-		<uni-search-bar placeholder="乐谱搜索" :radius="100"  @confirm="search"></uni-search-bar>
+		<uni-search-bar placeholder="乐谱搜索" :radius="100"  @confirm="goUrl('/components/searchresult/searchresult')"></uni-search-bar>
 		
 		<view class="banner">
 			

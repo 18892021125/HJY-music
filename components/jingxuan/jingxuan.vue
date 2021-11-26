@@ -37,7 +37,7 @@
 		 },
 		data() {
 			return {
-			items: ['推荐', '交流', '演出','原创'],
+			items: ['推荐'],
 			current: 0,
 			colorIndex: 0,
 			activeColor: '#ff7361',
