@@ -9,7 +9,8 @@
 		</view>
 		<view class="content">
 			<view v-if="current === 0"><yuepu></yuepu></view>
-			
+			<view v-if="current === 1"><banzou></banzou></view>
+			<view v-if="current === 2"><yueshou></yueshou></view>
 		</view>
 	</view>
 </template>
@@ -17,9 +18,13 @@
 <script>
 	import {uniSegmentedControl} from '@dcloudio/uni-ui';
 	import yuepu from '../../components/yuepu/yuepu';
+	import banzou from '../../components/banzou/banzou';
+	import yueshou from '../../components/yueshou/yueshou'
 	export default {
 		components: {uniSegmentedControl,
 					yuepu,
+					banzou,
+					yueshou,
 		},
 		data() {
 			return {
@@ -31,7 +36,11 @@
 			}
 		},
 		methods: {
-			
+			onClickItem(e) {
+				if (this.current !== e.currentIndex) {
+					this.current = e.currentIndex
+				}
+			},
 		}
 	}
 </script>
@@ -39,7 +48,7 @@
 <style>
 		
 	page{
-		background-color: #55aaff;
+		background-color: #f8eee2;
 	}
 .buttonindex{
 	

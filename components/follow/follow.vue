@@ -24,7 +24,7 @@
 <style lang="scss">
 	
 	.index{
-		background-color:#ffe8e6;
+		background-color:#F8EEE2;
 		padding-top: 60rpx;
 	}
 </style>

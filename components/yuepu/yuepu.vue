@@ -5,7 +5,7 @@
 				<image v-if="val.src" class="yuepuimg" :src="val.src"></image>
 				<view class="yuepuinfo">
 					<view>
-						<image class="yuepuicon" src="../../static/logo.png"></icon>
+						<view class="yuepuicon" > 乐谱</view>
 						<font v-if="val.name" class="yueputitle">{{val.name}}</font>
 					</view>
 					
@@ -15,7 +15,7 @@
 				</view>
 				<view class="shoucang">
 					<font class="shoucangtext"> 收藏</font>
-					<image class="collect" src="../../static/img/explore-selected.png"></image>
+					<image class="collect" src="../../static/img/music/shoucang.png"></image>
 				</view>
 				
 				
@@ -32,12 +32,12 @@
 				result:{
 					title:"结果信息",
 					list:[
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/goods/goods2.png",type:"图片谱"},
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/goods/goods2.png",type:"图片谱"},
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/goods/goods2.png",type:"图片谱"},
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/goods/goods2.png",type:"图片谱"},
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/goods/goods2.png",type:"图片谱"},
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/goods/goods2.png",type:"图片谱"},
+						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music1.png",type:"图片谱"},
+						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music2.png",type:"图片谱"},
+						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music3.png",type:"图片谱"},
+						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music2.png",type:"图片谱"},
+						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music1.png",type:"图片谱"},
+						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music2.png",type:"图片谱"},
 					
 					]
 				},
@@ -55,6 +55,9 @@
 	margin-top: 50rpx;
 	border-top-right-radius: 85rpx;
 	border-top-left-radius: 85rpx;
+	height:100%;
+	width: 100%;
+	position:absolute; 
 }
 .yuepuitem{
 	padding-top: 45rpx;
@@ -71,11 +74,11 @@
 }
 .yueputitle{
 	letter-spacing: 15rpx;
-	color: #bc3442;
+	color: #FF7361;
 }
 .musician{
 	font-size: 25rpx;
-	color: #808080;
+	color: #98989A;
 	margin-top: 25rpx;
 	letter-spacing: 5rpx;
 }
@@ -84,7 +87,7 @@
 	padding-top: 30rpx;
 	line-height: 20rpx;
 	font-size: 15rpx;
-	color: #007AFF;
+	color: #98989a;
 	letter-spacing: 10rpx;
 }
 .yuepuimg{
@@ -92,9 +95,16 @@
 	width: 150rpx;
 }
 .yuepuicon{
-	height: 25rpx;
+	display: inline;
+	background-color: #e4b4aa;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 10rpx;
+	
 	border-radius: 25rpx;
-	width: 75rpx;
+	padding:9rpx;
+	padding-left: 15rpx;
+	padding-right: 15rpx;
 	margin-right: 20rpx;
 }
 .collect{

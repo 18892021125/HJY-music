@@ -1,6 +1,6 @@
 <template>
 	<view >
-		<view class="music" v-for="(val,index) in prodata.list" :key="index" @tap="goUrl('./pages/user/user')">
+		<view class="music" v-for="(val,index) in prodata.list" @tap="goUrl('/components/yuepulist/yuepulist')">
 			<view class="musicitem">
 				<image v-if="val.src" :src="val.src" style="width: 70px; height: 70px;margin-top: 15rpx;margin-left: 15rpx;margin-bottom: 15rpx; ">
 				<view class="textinfo">
@@ -45,7 +45,12 @@
 		methods:{
 			playmusic(){
 				
-			}
+			},
+			goUrl : function (str){
+				uni.navigateTo({
+					url: str
+				});
+			},
 		}
 	}
 </script>

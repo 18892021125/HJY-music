@@ -10,7 +10,7 @@
 			</view>
 			<view class="line"></view>
 			<view class="useroption">
-				<view class="optionitem">
+				<view class="optionitem" @click="goUrl('/components/followcard/followcard')">
 					<image src="../../static/img/tongxunlu.png" style="width: 50rpx;height: 50rpx;"></image>
 					<view class="optiontextv">
 						<font class="optiontext">通讯录</font>
@@ -69,7 +69,11 @@
 			}
 		},
 		methods: {
-			
+			goUrl : function (str){
+				uni.navigateTo({
+					url: str
+				});
+			},
 		}
 	}
 </script>

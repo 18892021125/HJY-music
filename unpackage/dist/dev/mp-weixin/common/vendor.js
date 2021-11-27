@@ -804,11 +804,6 @@ var customize = cached(function (str) {
 });
 
 function initTriggerEvent(mpInstance) {
-  {
-    if (!wx.canIUse || !wx.canIUse('nextTick')) {
-      return;
-    }
-  }
   var oldTriggerEvent = mpInstance.triggerEvent;
   mpInstance.triggerEvent = function (event) {for (var _len3 = arguments.length, args = new Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {args[_key3 - 1] = arguments[_key3];}
     return oldTriggerEvent.apply(mpInstance, [customize(event)].concat(args));
@@ -1480,7 +1475,7 @@ function initScopedSlotsParams() {
     var has = center[vueId];
     if (!has) {
       parents[vueId] = this;
-      this.$on('hook:destory', function () {
+      this.$on('hook:destroyed', function () {
         delete parents[vueId];
       });
     }
@@ -1494,7 +1489,7 @@ function initScopedSlotsParams() {
       return key ? object[key] : object;
     } else {
       parents[vueId] = this;
-      this.$on('hook:destory', function () {
+      this.$on('hook:destroyed', function () {
         delete parents[vueId];
       });
     }
@@ -2055,6 +2050,35 @@ uni$1;exports.default = _default;
 
 /***/ }),
 
+/***/ 108:
+/*!*************************************************************************************************!*\
+  !*** F:/workspace/HJY-music/uni_modules/uni-search-bar/components/uni-search-bar/i18n/index.js ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 109));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 110));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 111));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+{
+  en: _en.default,
+  'zh-Hans': _zhHans.default,
+  'zh-Hant': _zhHant.default };exports.default = _default;
+
+/***/ }),
+
+/***/ 109:
+/*!************************************************************************************************!*\
+  !*** F:/workspace/HJY-music/uni_modules/uni-search-bar/components/uni-search-bar/i18n/en.json ***!
+  \************************************************************************************************/
+/*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"Search enter content\"}");
+
+/***/ }),
+
 /***/ 11:
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
@@ -2184,38 +2208,9 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 116:
-/*!*************************************************************************************************!*\
-  !*** E:/workspace/HJY-music/uni_modules/uni-search-bar/components/uni-search-bar/i18n/index.js ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 117));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 118));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 119));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
-{
-  en: _en.default,
-  'zh-Hans': _zhHans.default,
-  'zh-Hant': _zhHant.default };exports.default = _default;
-
-/***/ }),
-
-/***/ 117:
-/*!************************************************************************************************!*\
-  !*** E:/workspace/HJY-music/uni_modules/uni-search-bar/components/uni-search-bar/i18n/en.json ***!
-  \************************************************************************************************/
-/*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-bar.placeholder\":\"Search enter content\"}");
-
-/***/ }),
-
-/***/ 118:
+/***/ 110:
 /*!*****************************************************************************************************!*\
-  !*** E:/workspace/HJY-music/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hans.json ***!
+  !*** F:/workspace/HJY-music/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hans.json ***!
   \*****************************************************************************************************/
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
@@ -2224,9 +2219,9 @@ module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-
 
 /***/ }),
 
-/***/ 119:
+/***/ 111:
 /*!*****************************************************************************************************!*\
-  !*** E:/workspace/HJY-music/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hant.json ***!
+  !*** F:/workspace/HJY-music/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hant.json ***!
   \*****************************************************************************************************/
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
@@ -2235,9 +2230,9 @@ module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-
 
 /***/ }),
 
-/***/ 127:
+/***/ 119:
 /*!**********************************************************************************!*\
-  !*** E:/workspace/HJY-music/uni_modules/uni-icons/components/uni-icons/icons.js ***!
+  !*** F:/workspace/HJY-music/uni_modules/uni-icons/components/uni-icons/icons.js ***!
   \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -3358,9 +3353,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 142:
+/***/ 134:
 /*!***********************************************************************************!*\
-  !*** E:/workspace/HJY-music/node_modules/@dcloudio/uni-ui/lib/uni-icons/icons.js ***!
+  !*** F:/workspace/HJY-music/node_modules/@dcloudio/uni-ui/lib/uni-icons/icons.js ***!
   \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -4481,17 +4476,17 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 157:
+/***/ 149:
 /*!*********************************************************************************************!*\
-  !*** E:/workspace/HJY-music/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/i18n/index.js ***!
+  !*** F:/workspace/HJY-music/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/i18n/index.js ***!
   \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 158));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 159));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 160));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 150));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 151));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 152));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
   en: _en.default,
   'zh-Hans': _zhHans.default,
@@ -4499,9 +4494,9 @@ var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 1
 
 /***/ }),
 
-/***/ 158:
+/***/ 150:
 /*!********************************************************************************************!*\
-  !*** E:/workspace/HJY-music/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/i18n/en.json ***!
+  !*** F:/workspace/HJY-music/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/i18n/en.json ***!
   \********************************************************************************************/
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
@@ -4510,9 +4505,9 @@ module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-
 
 /***/ }),
 
-/***/ 159:
+/***/ 151:
 /*!*************************************************************************************************!*\
-  !*** E:/workspace/HJY-music/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/i18n/zh-Hans.json ***!
+  !*** F:/workspace/HJY-music/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/i18n/zh-Hans.json ***!
   \*************************************************************************************************/
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
@@ -4521,9 +4516,9 @@ module.exports = JSON.parse("{\"uni-search-bar.cancel\":\"cancel\",\"uni-search-
 
 /***/ }),
 
-/***/ 160:
+/***/ 152:
 /*!*************************************************************************************************!*\
-  !*** E:/workspace/HJY-music/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/i18n/zh-Hant.json ***!
+  !*** F:/workspace/HJY-music/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/i18n/zh-Hant.json ***!
   \*************************************************************************************************/
 /*! exports provided: uni-search-bar.cancel, uni-search-bar.placeholder, default */
 /***/ (function(module) {
@@ -11078,7 +11073,7 @@ function resolveLocaleChain(locale) {
 
 /***/ 5:
 /*!*****************************************!*\
-  !*** E:/workspace/HJY-music/pages.json ***!
+  !*** F:/workspace/HJY-music/pages.json ***!
   \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -11089,7 +11084,7 @@ function resolveLocaleChain(locale) {
 
 /***/ 53:
 /*!*************************************!*\
-  !*** E:/workspace/HJY-music/vue.js ***!
+  !*** F:/workspace/HJY-music/vue.js ***!
   \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -23107,7 +23102,7 @@ function resolveLocaleChain(locale) {
   return Vue;
 
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 2)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! (webpack)/buildin/global.js */ 2)))
 
 /***/ })
 

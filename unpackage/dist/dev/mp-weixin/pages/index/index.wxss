@@ -55,7 +55,7 @@ swiper-item .swipericon {
 }
 .icontext {
   color: #FF6034;
-
+  face: "黑体";
 }
 ._li {
   margin-left: 63rpx;

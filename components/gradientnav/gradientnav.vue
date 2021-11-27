@@ -10,7 +10,7 @@
 			 <view class="box">
 				<view style="height: 44px;"></view>
 			 	<swiper class="swiper" :previous-margin="swiper.margin" :next-margin='swiper.margin' :circular="true" @change="swiperChange">
-			 		<swiper-item v-for="(item,index) in swiper.list" :key="index">
+			 		<swiper-item v-for="(item,index) in swiper.list" >
 						
 			 			<image class='le-img' :src='item' :class="{'le-active':swiper.index == index}"></image>
 						<image class='browsenum' src="/static/img/browsenum.png" :class="{'bn-active':swiper.index==index}"></image>
@@ -102,7 +102,7 @@
 					bottom: 0;
 					left: 0;
 					height: 65%;
-					background-image: linear-gradient(to bottom ,transparent, #ffe8e6);
+					background-image: linear-gradient(to bottom ,transparent, #F8EEE2);
 				}
 				
 				> image{

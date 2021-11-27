@@ -4,7 +4,7 @@
 			<view class="flex_col">
 				<view class="box1"></view>
 				<view class="flex_grow flex_col flex_center tab">
-					<view v-for="(item,index) in topNavArr" :key="index"
+					<view v-for="(item,index) in topNavArr" 
 					 :class="{ 'active':topNavIndex==index }" 
 					 :data-index="index" @tap="changeTopNav">{{item}}</view>
 				</view>
@@ -19,7 +19,7 @@
 			<font class="mailtitle">精选好物</font>
 			<font class="viewall">View All</font>
 		</view>
-		<goodscard :prodata="goods"></goodscard>
+		<goodscard ></goodscard>
 		</view>
 		<view v-if="topNavIndex==1">
 		<jingxuan></jingxuan>
@@ -97,7 +97,7 @@
 	@import "@/lib/global.scss";
 	
 	page{
-		background-color: #ffe8e6;
+		background-color: #F8EEE2;
 	}
 	/* 标题栏 */
 	.title{
@@ -170,7 +170,7 @@
 		float: right;
 	}
 	.index{
-		background-color:#ffe8e6 ;
+		background-color:#F8EEE2 ;
 	}
 
 </style>

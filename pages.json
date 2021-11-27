@@ -71,21 +71,14 @@
             }
             
         }
-        ,{
-            "path" : "components/jingxuancard/jingxuancard",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
+       
         ,{
             "path" : "components/followcard/followcard",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
             }
             
         }
@@ -98,8 +91,9 @@
             }
             
         }
+      
         ,{
-            "path" : "components/yuepu/yuepu",
+            "path" : "components/banzou/banzou",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -107,12 +101,71 @@
             }
             
         }
+        ,{
+            "path" : "components/yueshou/yueshou",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "components/yuepulist/yuepulist",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+		    }
+		    
+		}
+		
+        ,{
+            "path" : "components/kechengdetail/kechengdetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "components/kechengjingxuan/kechengjingxuan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/huodongjiaoliu/huodongjiaoliu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "components/message/message",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#ffe8e6",
-		"backgroundColor": "#ffe8e6",
+		"navigationBarBackgroundColor": "#F8EEE2",
+		"backgroundColor": "#F8EEE2",
 		"usingComponents":{
 		"van-button":"wxcomponents/vant/button/index",
 		"van-tab":"wxcomponents/vant/tab/index",
@@ -124,7 +177,7 @@
 		"color": "#C0C4CC",
 		"selectedColor": "#fa436a",
 		"borderStyle": "black",
-		"backgroundColor": "#ffe8e6",
+		"backgroundColor": "#F8EEE2",
 		
 		"blurEffect":"light",
 		"borderStyle":"white",

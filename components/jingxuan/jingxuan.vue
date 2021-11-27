@@ -52,11 +52,11 @@
 	.index{
 		
 		margin-top: 65rpx;
-		background-color:#ffe8e6;
+		background-color:#F8EEE2;
 		
 	}
 	.guesslike{
-		background-color: #ffe8e6;
+		background-color: #F8EEE2;
 		color: #000000;
 		font-size: 40rpx;
 		margin-left: 45rpx;
@@ -73,11 +73,11 @@
 	.uni-padding-wrap {
 		// width: 750rpx;
 		padding: 0px 30px;
-		background-color: #ffe8e6;
+		background-color: #F8EEE2;
 	}
 	.content {
 			
-		background-color: #ffe8e6;
+		background-color: #F8EEE2;
 
 		
 	}

@@ -22,7 +22,7 @@
 
 <style lang="scss">
 .index{
-	background-color: #ffe8e6;
+	background-color: #F8EEE2;
 	height: 999rpx;
 }
 </style>

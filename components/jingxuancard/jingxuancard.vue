@@ -68,7 +68,7 @@
 <style lang="scss">
 .jxcardmain{
 	position: absolute;
-	background-color: #ffe8e6;
+	background-color: #F8EEE2;
 }
 .jxcard{
 	padding-left: 15rpx;

@@ -3,7 +3,7 @@
 		<view class="banner">	 
 		<uni-swiper-dot :info="swiper.img" :current="current" :mode="mode" :dotsStyles="dotsstyle">
 			<swiper class="bannerContent"  :autoplay="autoplay" :interval="interval" :duration="duration" @change="change">
-				<swiper-item v-for="(value,index) in swiper.img" :key="index" >
+				<swiper-item v-for="(value,index) in swiper.img">
 				
 					<image :src="value" class="swiperImg"></image>
 					<font class="imgtitle">开启传统音乐之旅</font>
@@ -20,27 +20,37 @@
 		<view class="banner">
 			
 			<li >
-				<view @tap="goUrl('../zhibo/zhibo')">
-				<uni-icons custom-prefix="iconfont" type="icon-zhibo" size="50" ></uni-icons>
+				<view  class="imageicon" @tap="goUrl('../zhibo/zhibo')">
+				<image src="../../static/img/zhibo.png" style="width: 80rpx;height: 80rpx;"></image>
 				<br> 
-				<font class="icontext">直播间</font>
+				
 				</view>
+				<font class="icontext">直播间</font>
 			</li>
 			
 			<li >
-				<uni-icons custom-prefix="iconfont" type="icon-jiaoliu" size="50"></uni-icons>
-				<br>
+				<view  class="imageicon" @tap="goUrl('/components/huodongjiaoliu/huodongjiaoliu')">
+				<image src="../../static/img/jiaoliu.png" style="width: 80rpx;height: 80rpx;"></image>
+				<br> 
+				
+				</view>
 				<font class="icontext">活动交流</font>
 			</li>
 			<li >
-				<uni-icons custom-prefix="iconfont" type="icon-kecheng" size="50"></uni-icons>
-				<br>
-				<font class="icontext">课程</font>
+				<view  class="imageicon" @tap="goUrl('/components/kechengdetail/kechengdetail')">
+				<image src="../../static/img/kecheng.png" style="width: 60rpx;height: 80rpx;"></image>
+				<br> 
+				
+				</view>
+				<font class="icontext" >课程</font>
 				
 			</li >
 			<li>
-				<uni-icons custom-prefix="iconfont" type="icon-huiyi" size="50"></uni-icons>
-				<br>
+				<view  class="imageicon" @tap="goUrl('../zhibo/zhibo')">
+				<image src="../../static/img/huiyi.png" style="width: 80rpx;height: 80rpx;"></image>
+				<br> 
+				
+				</view>
 				<font class="icontext">云乐会议</font>
 			</li>
 			
@@ -165,16 +175,24 @@
 		justify-content: center;
 	}
 	.icontext{
-		color: #FF6034;
-		face:"黑体";
+		color: #000000;
+		letter-spacing: 2rpx;
+	
+	}
+	.imageicon{
+		background-color: #ffffff;
+		border-radius: 30rpx;
+		padding: 25rpx;
 	}
 	li{
-	margin-left: 63rpx;
+	margin: 20rpx;
+	padding-top: 10rpx;
+	width: 450rpx;
 	display: block;
 	float: left;
 	list-style:none;
 	text-align: center;
-	
+
 
 	}
 	.interactiontext{
@@ -190,7 +208,7 @@
 		
 		flex-direction: row;
 		
-		background-color: #ffe8e6;
+		background-color: #F8EEE2;
 		.bannerContent{
 			width: 90%;
 			height: 360rpx;
@@ -214,7 +232,7 @@
 		margin-bottom: 50rpx;
 	}
 	.banner{
-		background-color:#ffe8e6 ;
+		background-color:#F8EEE2 ;
 		display: flex;
 	}
 	.text-area {

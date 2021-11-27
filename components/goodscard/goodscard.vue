@@ -52,7 +52,7 @@
 	flex-direction: column;
 }
 .costcard{
-	background-color: #ffe8e6;
+	background-color: #F8EEE2;
 	display: inline;
 	padding:15rpx ;
 	border-radius: 20rpx;

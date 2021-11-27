@@ -1,5 +1,7 @@
 <template>
 	<view >
+		<uni-nav-bar left-icon="back" @clickLeft="back" title="关注列表" backgroundColor="#f8eee2" ></uni-nav-bar>
+		<uni-search-bar placeholder="搜索" :radius="100"  @confirm="goUrl('/components/searchresult/searchresult')"></uni-search-bar>
 		<view class="followuser" v-for="(val,index) in follows.list" :key="index" @tap="goUrl('./pages/user/user')">
 			<view class="followitem">
 				<image v-if="val.src" :src="val.src" style="width: 70px; height: 70px; margin-top: 15rpx;margin-left: 15rpx; ">
@@ -19,8 +21,13 @@
 </template>
 
 <script>
+	import {uniNavBar} from '@dcloudio/uni-ui';
+	import {uniSearchBar} from '@dcloudio/uni-ui';
+	
 	export default {
-		
+		components:{
+			uniNavBar,
+		},
 		data() {
 			return {
 			follows:{
@@ -46,12 +53,19 @@
 			
 		
 		methods: {
-			
+			back() {
+				uni.navigateBack({
+					delta: 1
+				})
+			},
 		}
 	}
 </script>
 
 <style lang="scss"> 
+page{
+	background-color: #f8eee2;
+}
 .followinfo{
 	margin-left: 20px;
 	display: flex;
@@ -86,7 +100,7 @@
 	margin-left: 15rpx;
 	margin-right:15rpx ;
 	margin-top:15rpx ;
-	background-color: #fffcf3;
+	background-color: #FFFFFF;
 	border-radius: 25px;
 	flex-direction: row;
 	height: 160rpx;

@@ -1,1 +1,51 @@
-<view><block wx:for="{{prodata.list}}" wx:for-item="val" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['goUrl',['./pages/user/user']]]]]}}" class="followuser" bindtap="__e"><view class="followitem"><block wx:if="{{val.src}}"><image style="width:70px;height:70px;margin-top:15rpx;margin-left:15rpx;" src="{{val.src}}"></image></block><view class="followinfo"><view class="_br"></view><block wx:if="{{val.name}}"><font class="name" vue-id="{{'42a6c5bc-1-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">{{val.name}}</font></block><block wx:if="{{val.sign}}"><font class="sign" vue-id="{{'42a6c5bc-2-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">{{val.sign}}</font></block></view><view class="moreinfoicon"><uni-icons vue-id="{{'42a6c5bc-3-'+index}}" custom-prefix="iconfont" type="icon-moreinfo" size="25" data-event-opts="{{[['^click',[['playmusic']]]]}}" bind:click="__e" bind:__l="__l"></uni-icons></view></view></view></block></view>
+<view class="indexinall">
+  <block wx:for="{{dtinfo.list}}" wx:for-item="val" wx:for-index="index">
+    <view class="index">
+      <view class="posterinfo">
+        <block wx:if="{{val.src}}">
+          <image class="posterimg" src="{{val.src}}"></image>
+        </block>
+        <view class="textinfo">
+          <block wx:if="{{val.postername}}">
+            <font class="postname" vue-id="{{'42a6c5bc-1-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">
+              {{val.postername}}</font>
+          </block>
+          <view class="_br"></view>
+          <block wx:if="{{val.subtitile}}">
+            <font class="likeinfo" vue-id="{{'42a6c5bc-2-'+index}}" bind:__l="__l" vue-slots="{{['default']}}">
+              {{val.subtitile}}</font>
+          </block>
+        </view>
+      </view>
+      <block wx:if="{{val.title}}">
+        <view class="title">{{val.title}}</view>
+      </block>
+      <block wx:if="{{val.content}}">
+        <view class="content">{{val.content}}</view>
+      </block>
+      <view class="imageinfo">
+        <block wx:if="{{val.src1}}">
+          <image class="imageitem" src="{{val.src1}}"></image>
+        </block>
+        <block wx:if="{{val.src2}}">
+          <image class="imageitem" src="{{val.src2}}"></image>
+        </block>
+        <block wx:if="{{val.src3}}">
+          <image class="imageitem" src="{{val.src3}}"></image>
+        </block>
+      </view>
+      <view class="moreaction">
+        <image class="redheart" src="../../static/img/jx/likefill.png"></image>
+        <block wx:if="{{val.likenum}}">
+          <view class="_p">{{val.likenum}}</view>
+        </block>
+        <image class="comment" src="../../static/img/explore-selected.png"></image>
+        <block wx:if="{{val.commentnum}}">
+          <view class="_p">{{val.commentnum}}</view>
+        </block>
+        <image class="moreinfo" src="../../static/img/user-selected.png"></image>
+      </view>
+      <view class="line"></view>
+    </view>
+  </block>
+</view>

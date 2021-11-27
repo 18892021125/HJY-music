@@ -64,7 +64,7 @@
 		background-color: #000000;
 	}
 	.scrollitem{
-	background-color: #ffe8e6;
+	background-color: #F8EEE2;
 	display: inline-block;
 	
 	

@@ -6,9 +6,8 @@
     "components/gradientnav/gradientnav",
     "pages/zhibo/zhibo",
     "components/tuijiancard/tuijiancard",
-    "components/jingxuancard/jingxuancard",
-    "components/jingxuan/jingxuan",
-    "components/follow/follow"
+    "components/followcard/followcard",
+    "components/searchresult/searchresult"
   ],
   "subPackages": [],
   "window": {

@@ -1,17 +1,1 @@
-<view class="index">
-    <uni-search-bar vue-id="3c850d7c-1" placeholder="乐谱搜索" radius="{{100}}" data-event-opts="{{[['^confirm',[['search']]]]}}" bind:confirm="__e" bind:__l="__l"></uni-search-bar>
-    <view class="guesslike">
-        <font vue-id="3c850d7c-2" bind:__l="__l" vue-slots="{{['default']}}">猜你喜欢</font>
-    </view>
-    <jingxuangundong vue-id="3c850d7c-3" bind:__l="__l"></jingxuangundong>
-    <view class="uni-padding-wrap uni-common-mt">
-        <uni-segmented-control vue-id="3c850d7c-4" current="{{current}}" values="{{items}}" style-type="{{styleType}}" active-color="{{activeColor}}" data-event-opts="{{[['^clickItem',[['onClickItem']]]]}}" bind:clickItem="__e" bind:__l="__l"></uni-segmented-control>
-    </view>
-    <view class="content">
-        <block wx:if="{{current===0}}">
-            <view>
-                <jingxuancard vue-id="3c850d7c-5" bind:__l="__l"></jingxuancard>
-            </view>
-        </block>
-    </view>
-</view>
+<view class="index"><uni-search-bar vue-id="3c850d7c-1" placeholder="乐谱搜索" radius="{{100}}" data-event-opts="{{[['^confirm',[['search']]]]}}" bind:confirm="__e" bind:__l="__l"></uni-search-bar><view class="guesslike"><font vue-id="3c850d7c-2" bind:__l="__l" vue-slots="{{['default']}}">猜你喜欢</font></view><jingxuangundong vue-id="3c850d7c-3" bind:__l="__l"></jingxuangundong><view class="uni-padding-wrap uni-common-mt"><uni-segmented-control vue-id="3c850d7c-4" current="{{current}}" values="{{items}}" style-type="{{styleType}}" active-color="{{activeColor}}" data-event-opts="{{[['^clickItem',[['onClickItem']]]]}}" bind:clickItem="__e" bind:__l="__l"></uni-segmented-control></view><view class="content"><block wx:if="{{current===0}}"><view><jingxuancard vue-id="3c850d7c-5" bind:__l="__l"></jingxuancard></view></block></view></view>
