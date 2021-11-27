@@ -151,10 +151,13 @@
 		margin-left: 30rpx;
 		display: flex;
 		flex-direction: column;
-		text-align: center;
+		
 	}
 	.yueputitle{
 		font-size: 35rpx;
 		letter-spacing: 3rpx;
+	}
+	.yueputype{
+		margin-left: 45rpx;
 	}
 </style>

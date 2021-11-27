@@ -27,9 +27,10 @@
 	position:absolute; 
 }
 .empty{
-	padding-top: 200rpx;
+	
 	display: block;
-	margin: auto;
+	margin:auto;
+	margin-top: 300rpx;
 	width: 300rpx;
 	height: 190rpx;
 }

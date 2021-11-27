@@ -21,4 +21,8 @@
 	@import "/wxcomponents/vant/tab/index.wxss";
 	@import "/wxcomponents/vant/tabs/index.wxss";
 	@import "/static/iconfont.css";
+	@import "colorui/main.css";
+	@import "colorui/icon.css";
+	@import "static/css/index-app.css";
+	
 </style>

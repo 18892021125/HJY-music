@@ -22,19 +22,19 @@
 						<font class="optiontext">消息</font>
 					</view>
 				</view>
-				<view class="optionitem">
-					<image src="../../static/img/puqushoucang.png" style="width: 50rpx;height: 50rpx;"></image>
+				<view class="optionitem" @click="goUrl('/components/puqushoucang/puqushoucang')">
+					<image src="../../static/img/puqushoucang.png"  style="width: 50rpx;height: 50rpx;"></image>
 					<view class="optiontextv">
 						<font class="optiontext">谱曲收藏</font>
 					</view>
 				</view>
-				<view class="optionitem">
+				<view class="optionitem" @click="goUrl('/components/settings/settings')">
 					<image src="../../static/img/shezhi.png" style="width: 50rpx;height: 50rpx;"></image>
 					<view class="optiontextv">
 						<font class="optiontext">设置</font>
 					</view>
 				</view>
-				<view class="optionitem">
+				<view class="optionitem"  @click="goUrl('/components/timetableindex/timetableindex')">
 					<image src="../../static/img/pailianshijianbiao.png" style="width: 50rpx;height: 50rpx;"></image>
 					<view class="optiontextv">
 						<font class="optiontext">排练时间表</font>
@@ -43,7 +43,7 @@
 				
 			</view>
 			<view class="line"></view>
-			<view class="kefu">
+			<view class="kefu" @click="goUrl('/components/kefu/kefu')">
 				
 				<image src="../../static/img/lianxikefu.png" style="width: 50rpx;height: 50rpx;"></image>
 				<view class="kefuoptiontext">
@@ -118,7 +118,9 @@
 	.userindex{
 		height: 100%;
 		background-color: #ffffff;
-		
+		height:100%;
+		width: 100%;
+		position:absolute; 
 	}
 	.useroption{
 		display: flex;
