@@ -10,7 +10,7 @@
 			 <view class="box">
 				<view style="height: 44px;"></view>
 			 	<swiper class="swiper" :previous-margin="swiper.margin" :next-margin='swiper.margin' :circular="true" @change="swiperChange">
-			 		<swiper-item v-for="(item,index) in swiper.list" >
+			 		<swiper-item v-for="(item,index) in swiper.list" @click="goUrl('/components/shangpinxiangqing/shangpinxiangqing')" >
 						
 			 			<image class='le-img' :src='item' :class="{'le-active':swiper.index == index}"></image>
 						<image class='browsenum' src="/static/img/browsenum.png" :class="{'bn-active':swiper.index==index}"></image>
@@ -54,6 +54,12 @@
 			swiperChange: function(e) {
 				this.swiper.index = e.detail.current;
 			},
+			goUrl : function (str){
+				uni.navigateTo({
+					url: str
+				});
+			},
+			
 		}
 	}
 </script>

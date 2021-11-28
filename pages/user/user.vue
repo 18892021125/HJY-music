@@ -21,6 +21,7 @@
 </script>
 
 <style lang="scss">
+	
 .index{
 	background-color: #F8EEE2;
 	height: 999rpx;
