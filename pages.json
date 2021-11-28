@@ -313,6 +313,24 @@
             }
             
         }
+        ,{
+            "path" : "components/yuepuxiangqing/yuepuxiangqing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/tiaoyingengduo/tiaoyingengduo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -47,9 +47,9 @@
 
 <style>
 		
-	page{
-		background-color: #f8eee2;
-	}
+page{
+	background-color: #f8eee2;
+}
 .buttonindex{
 	
 }
