@@ -33,7 +33,7 @@
 					<view class="zhibodate">何家营鼓乐设</view>
 				</view>
 				<view class ="more">
-					<view class="moretext">更 多</view>
+					<view class="moretext" @click="goUrl('/components/kechenggengduo/kechenggengduo')">更 多</view>
 					<view class="canjiarenshu">329人参加</view>
 				</view>
 			</view>
@@ -45,7 +45,7 @@
 					<view class="zhibodate">何家营鼓乐设</view>
 				</view>
 				<view class ="more">
-					<view class="moretext">更 多</view>
+					<view class="moretext" @click="goUrl('/components/kechenggengduo/kechenggengduo')">更 多</view>
 					<view class="canjiarenshu">417人参加</view>
 				</view>
 			</view>
@@ -62,7 +62,11 @@
 			}
 		},
 		methods: {
-			
+			goUrl : function (str){
+				uni.navigateTo({
+					url: str
+				});
+			},
 		}
 	}
 </script>

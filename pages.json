@@ -303,6 +303,16 @@
             }
             
         }
+        ,{
+            "path" : "components/kechenggengduo/kechenggengduo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

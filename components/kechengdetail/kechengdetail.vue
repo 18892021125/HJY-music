@@ -39,6 +39,11 @@
 					delta: 1
 				})
 			},
+			goUrl : function (str){
+				uni.navigateTo({
+					url: str
+				});
+			},
 		}
 	}
 </script>

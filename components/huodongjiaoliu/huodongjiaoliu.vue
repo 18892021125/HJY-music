@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<uni-nav-bar left-icon="back" @clickLeft="back" title="活动交流" backgroundColor="#f8eee2" ></uni-nav-bar>
-		<view v-for="(val,index) in yuepilist.list" class="jingxuanitem">
+		<view v-for="(val,index) in yuepilist.list" class="jingxuanitem" @click="goUrl('/components/huodongxiangqing/huodongxiangqing')">
 			<view v-if="val.name" class="jxtitle">{{val.name}}</view>
 			<image v-if="val.src" class="jximage" :src="val.src"></image>
 			<view class="more">了解更多</view>
@@ -35,6 +35,11 @@
 				uni.navigateBack({
 					delta: 1
 				})
+			},
+			goUrl : function (str){
+				uni.navigateTo({
+					url: str
+				});
 			},
 		}
 	}
