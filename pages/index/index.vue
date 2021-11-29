@@ -46,8 +46,8 @@
 				
 			</li >
 			<li>
-				<view  class="imageicon" @tap="goUrl('../zhibo/zhibo')">
-				<image src="../../static/img/huiyi.png" style="width: 80rpx;height: 80rpx;"></image>
+				<view  class="imageicon" @tap="goUrl('/components/yunyuehuiyi/yunyuehuiyi')">
+				<image src="../../static/img/yunyuehuiyi.png" style="width: 80rpx;height: 80rpx;"></image>
 				<br> 
 				
 				</view>

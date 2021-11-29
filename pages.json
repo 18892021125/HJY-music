@@ -331,6 +331,16 @@
             }
             
         }
+        ,{
+            "path" : "components/yunyuehuiyi/yunyuehuiyi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
