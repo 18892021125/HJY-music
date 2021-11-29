@@ -1,7 +1,7 @@
 <template>
 	<view class="indexinall">
 		<view v-for="(val,index) in result.list">
-			<view class="yuepuitem">
+			<view class="yuepuitem" @click="goUrl('/components/yuepuxiangqing/yuepuxiangqing')">
 				<image v-if="val.src" class="yuepuimg" :src="val.src"></image>
 				<view class="yuepuinfo">
 					<view>
@@ -44,7 +44,11 @@
 			}
 		},
 		methods: {
-			
+			goUrl : function (str){
+				uni.navigateTo({
+					url: str
+				});
+			},
 		}
 	}
 </script>

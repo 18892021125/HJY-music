@@ -1,0 +1,31 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\NWU\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @dcloudio/uni-ui
+
+PATH: 
+  C:\Program Files\Microsoft MPI\Bin\;E:\CUDAKIT\bin;E:\CUDAKIT\libnvvp;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Basler\pylon 6\Runtime\x64\;C:\Program Files\Basler\pylon 6\Runtime\Win32\;D:\VM\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;E:\cmake-3.18.4-win64-x64\bin;F:\OPENCV_CMAKE_VS19\install\x64\vc16\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Server 8.0\bin;E:\MATLAB\bin;C:\Program Files (x86)\dotnet\;F:\QT\5.9.9\msvc2015\bin;F:\Javajdk\bin;F:\Javajdk\jre\bin;C:\Program Files\Basler\pylon 6\Runtime\x64;F:\QT\Tools\mingw810_64\bin;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\Hostx64\x64;C:\Program Files\NVIDIA Corporation\Nsight Compute 2021.2.2\;C:\Program Files\OpenNI\Bin64;C:\Program Files\PrimeSense\NITE\bin64;D:\PCL 1.12.0\bin;D:\PCL 1.12.0\3rdParty\FLANN\bin;D:\PCL 1.12.0\3rdParty\VTK\bin;D:\PCL 1.12.0\3rdParty\Qhull\bin;C:\Program Files\OpenNI2\Tools;D:\mingw64\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Users\NWU\AppData\Local\Microsoft\WindowsApps;C:\Users\NWU\.dotnet\tools;C:\Users\NWU\AppData\Roaming\npm;E:\Microsoft VS Code\bin;D:\PyCharm Community Edition 2020.2.3\bin;
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: E:\workspace\HJY-music\package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at C:\Users\NWU\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\NWU\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\NWU\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
