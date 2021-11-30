@@ -12,14 +12,14 @@
 			 	<swiper class="swiper" :previous-margin="swiper.margin" :next-margin='swiper.margin' :circular="true" @change="swiperChange">
 			 		<swiper-item v-for="(item,index) in swiper.list" @click="goUrl('/components/shangpinxiangqing/shangpinxiangqing')" >
 						
-			 			<image class='le-img' :src='item' :class="{'le-active':swiper.index == index}"></image>
+			 			<image class='le-img' :src='item.src' :class="{'le-active':swiper.index == index}"></image>
 						<image class='browsenum' src="/static/img/browsenum.png" :class="{'bn-active':swiper.index==index}"></image>
 						
-						<font class="browsenumval":style="">3.6K</font>
-						<font class="instrumentname">16弦竖琴</font>
-						<image class="storeheadpicture" src="/static/img/follow1.png" :class="{'le-active':swiper.index==index}"></image>
+						<font class="browsenumval" style="color: #FFFFFF;">3.6K</font>
+						<font class="instrumentname">{{item.goodname}}</font>
+						<image class="storeheadpicture" :src='item.headimg' :class="{'le-active':swiper.index==index}"></image>
 						<view class="storeinfo">
-							<font class="storename" >班士顿专卖店</font>
+							<view class="storename" style="color: #FFFFFF;" >{{item.name}}</view>
 						</view>
 					</swiper-item>
 			 	</swiper> 
@@ -36,9 +36,11 @@
 					margin: "150rpx",
 					index: 0,
 					list: [
-						"/static/img/douyin/7.jpg",
-						"/static/img/douyin/19.png",
-						"/static/img/douyin/20.png",
+						{src:"/static/img/douyin/19.png",name:"班士顿专卖店",headimg:"/static/img/follow1.png",goodname:"16弦竖琴"},
+						{src:"/static/img/douyin/20.png",name:"乐伯乐",headimg:"/static/img/follow3.png",goodname:"19弦莱雅琴"},
+						{src:"/static/img/douyin/37.jpg",name:"班士顿专卖店",headimg:"/static/img/follow1.png",goodname:"23弦月牙琴"},
+						
+						
 					]
 				}
 			}
@@ -150,12 +152,19 @@
 				
 			}
 			.instrumentname{
-				color: #0000FF;
+				color: #ffffff;
 				position: absolute;
 				bottom: 140rpx;
 				left:40rpx;
 				font-weight: bold;
 				font-size: 36rpx;
+				
+			}
+			.storename{
+				color:"#ffffff" ;
+				font-size: 28rpx;
+				font-weight: bold;
+				
 				
 			}
 			.storeinfo{
@@ -164,13 +173,8 @@
 				left: 130rpx;
 				
 			}
-			.storename{
-				color:"#ff007f" !important;
-				font-size: 28rpx;
-				font-weight: bold;
-				
-				
-			}
+			
+			
 			.storeheadpicture{
 				position: absolute;
 				bottom: 35rpx;
@@ -192,7 +196,7 @@
 				height: 100%;
 				display: block;
 				
-				border-radius: 4px;
+				border-radius: 25px;
 				padding-right: 10rpx;
 				padding-left: 10rpx;
 				

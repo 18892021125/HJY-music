@@ -32,13 +32,10 @@
 				result:{
 					title:"结果信息",
 					list:[
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music1.png",type:"图片谱"},
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music2.png",type:"图片谱"},
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music3.png",type:"图片谱"},
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music2.png",type:"图片谱"},
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music1.png",type:"图片谱"},
-						{name:"歌沙",musician:"张三李四",src:"../../static/img/music/music2.png",type:"图片谱"},
-					
+						{name:"平调曲破",musician:"未知音乐人",src:"../../static/img/music/music1.png",type:"图片谱"},
+						{name:"平调曲破",musician:"音乐小星星",src:"../../static/img/music/music2.png",type:"图片谱"},
+						{name:"平调曲破",musician:"叶缘广志",src:"../../static/img/music/music3.png",type:"图片谱"},
+						
 					]
 				},
 			}
@@ -119,8 +116,8 @@
 	width: 50rpx;
 }
 .shoucangtext{
-	font-weight: bold;
-	color: #000000;
+	
+	color: #0C0F27;
 	font-size: 30rpx;
 	
 }
@@ -140,7 +137,7 @@
 		margin-right: 55rpx;
 
 		height: 1px;
-		background-color: rgba(143, 139, 136, 1.0);
+		background-color: rgba(231, 231, 237, 1.0);
 		text-align: center;
 		font-size: 16px;
 	

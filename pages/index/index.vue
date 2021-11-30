@@ -58,6 +58,7 @@
 		</view>
 		
 		<view>
+			<view class="yuepufenlei">乐谱分类</view>
 			<musicclassification :prodata="music"></musicclassification>
 		</view>
 		
@@ -78,7 +79,7 @@
 		data() {
 			return {
 				dotsstyle:{
-					selectedBackgroundColor:'#ff00ff',
+					selectedBackgroundColor:'#ff7361',
 					backgroundColor:'rgba(255, 170, 255, 0.3)',
 				},
 				current: 0,
@@ -92,24 +93,14 @@
 					autoplay:true,
 					img:[
 						'../../static/img/show1.png',
-						'../../static/img/1.jpeg',
-						'../../static/img/3.jpeg'
+						'../../static/img/lunbo2.jpg',
+						'../../static/img/lunbo3.jpg'
 					]
 				},
 				music:{
 					title:"音乐信息",
 					list:[
-						{typec:"木管乐器1",typee:"Woodwind instrument1",src:"../../static/img/muguan.png"},
-						{typec:"木管乐器2",typee:"Woodwind instrument2",src:"../../static/img/muguan.png"},
-						{typec:"木管乐器3",typee:"Woodwind instrument3",src:"../../static/img/muguan.png"},
-						{typec:"木管乐器4",typee:"Woodwind instrument4",src:"../../static/img/muguan.png"},
-						{typec:"木管乐器5",typee:"Woodwind instrument5",src:"../../static/img/muguan.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
-						{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"}
+						
 					]
 				},
 			}
@@ -146,19 +137,21 @@
 			position: absolute;
 			top: 40upx;
 			left:30upx;
-			font-weight: bold;
-			color: red;
+			letter-spacing: 4rpx;
+			color: #ffffff;
 			
 			font-size: 36rpx;
 			
 		}
 		.imgtext{
 			position: absolute;
-			top: 90upx;
+			top: 87rpx;
 			left:65upx;
-			color: red;
+			letter-spacing: 2rpx;
+			color:#e3dbd9;
 			font-family: pfj;
-			
+			margin-left: 10rpx;
+			margin-bottom: 15rpx;
 		}
 		.swipericon{
 			position: absolute;
@@ -167,7 +160,11 @@
 		}
 		
 	}
-	
+	.yuepufenlei{
+		margin:35rpx ;
+		margin-top: 15rpx;
+		font-size: 45rpx;
+	}
 	.content {
 		display:block;
 		

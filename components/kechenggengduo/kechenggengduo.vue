@@ -26,7 +26,7 @@
 			<view  v-for="(val,index) in kecheng.list">
 				<view v-if="val.name" class="xiaojieneirong">
 					<view class="xiaojiename">{{val.name}}</view>
-					<image class="playicon" src="../../static/img/music/playimg.png"></image>
+					<image class="playicon" src="../../static/img/music/playimg.png" @click="goUrl('/components/kechengxiangqingsiji/kechengxiangqingsiji')"></image>
 				</view>
 				<view class="line"></view>
 			</view>
@@ -72,6 +72,11 @@
 				if (this.current !== e.currentIndex) {
 					this.current = e.currentIndex
 				}
+			},
+			goUrl : function (str){
+				uni.navigateTo({
+					url: str
+				});
 			},
 		}
 	}

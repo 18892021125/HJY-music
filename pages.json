@@ -340,6 +340,16 @@
             }
             
         }
+        ,{
+            "path" : "components/kechengxiangqingsiji/kechengxiangqingsiji",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

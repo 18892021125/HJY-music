@@ -3,7 +3,7 @@
 			
 			<scroll-view class="scroll-view_H" scroll-x="true" @scroll="scroll" scroll-left="0">
 				<view class="scrollitem" v-for="(val,index) in gundong.list" :key="index" @tap="goUrl('./pages/user/user')">
-					<image class="scrollimg" src ="../../static/img/2.jpeg" ></image>
+					<image class="scrollimg" :src ='val.src' ></image>
 					<view v-if="val.titleone" class="info">
 						<text >{{val.titleone}}<br>{{val.titletow}}</text>
 					</view>
@@ -25,10 +25,9 @@
 			gundong:{
 					title:"滚动信息",
 					list:[
-						{titleone:"丝竹鼓乐",titletow:"沪上盛典",src:"../../static/img/2.jpeg"},
-						{titleone:"民族音乐",titletow:"真滴牛批",src:"../../static/img/2.jpeg"},
-						{titleone:"丝竹鼓乐",titletow:"真滴·牛B",src:"../../static/img/2.jpeg"},
-						{titleone:"民族·音乐",titletow:"牛~~~~B",src:"../../static/img/2.jpeg"},
+						{titleone:"丝竹鼓乐",titletow:"沪上盛典",src:"../../static/img/cainixihuan1.png"},
+						{titleone:"民族音乐会",titletow:"意向·云水",src:"../../static/img/cainixihuan2.png"},
+					
 						
 						
 					]

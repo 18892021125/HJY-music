@@ -3,23 +3,23 @@
 		<uni-nav-bar left-icon="back" @clickLeft="back" title="云乐会议" backgroundColor="#f8eee2" ></uni-nav-bar>
 			
 		<view class="hostinfo">
-			<image class="headimg" src="../../static/img/follow1.png"></image>
+			<image class="headimg" src="../../static/img/sheyuan1.png"></image>
 			<view class="nameinfo">社员：何忠信</view>
-			<image class="messageinfo" src="../../static/img/jx/likeempty.png"></image>
+			<image class="messageinfo" src="../../static/img/lianxi.png"></image>
 		</view>
 		<view class="huiyicontent">
 			<view class="huiyiicon">
 				<view class="iconitem">
-					<image class="bigicon" src="../../static/img/follow2.png"></image>
+					<image class="bigicon" src="../../static/img/jiaruhuiyi.png"></image>
 					<view class="huiyitext">加入会议</view>
 				</view>
 				<view class="iconitem">
-					<image class="bigicon" src="../../static/img/follow2.png"></image>
-					<view class="huiyitext">加入会议</view>
+					<image class="bigicon" src="../../static/img/kuaisuhuiyi.png"></image>
+					<view class="huiyitext">快速会议</view>
 				</view>
 				<view class="iconitem">
-					<image class="bigicon" src="../../static/img/follow2.png"></image>
-					<view class="huiyitext">加入会议</view>
+					<image class="bigicon" src="../../static/img/yudinghuiyi.png"></image>
+					<view class="huiyitext">历史会议</view>
 				</view>
 				
 			</view>
@@ -93,12 +93,13 @@
 	margin-left: 20rpx;
 }
 .messageinfo{
-	width: 50rpx;
-	height: 50rpx;
+	width: 30rpx;
+	height: 30rpx;
 	float: right;
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-left: auto;
+	margin-right: 40rpx;
 }
 .huiyiicon{
 	display: flex;

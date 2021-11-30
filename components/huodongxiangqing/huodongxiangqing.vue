@@ -3,8 +3,9 @@
 		<view class="blurimg">
 			<image  class="blurimgitem" src="../../static/img/huodongjiaoliu.png"></image>
 		</view>
+		
 		<view class="huodongtitleinfo">
-			<image class="huodongmaininfo" src="../../static/img/huodongjiaoliu.png"></image>
+			<image class="huodongmaininfo" ></image>
 			<view class="textinfo">【西安站】2021全国巡演 · [ 筝乐传承，共谱华章 ]</view>
 		</view>
 		<view class="bottominfo">
@@ -51,6 +52,7 @@
 			</uni-list>
 			
 		</view>
+		<image class="huodongzhezhao" src="../../static/img/huodongjiaoliu.png"></image>
 		<view class="goods-carts">
 			<uni-goods-nav :options="options" :fill="true" :button-group="buttonGroup" @click="onClick" @buttonClick="buttonClick"/>
 		</view>
@@ -163,7 +165,7 @@
 	height: 600rpx;
 }
 .huodongtitleinfo{
-	padding-top: 200rpx;
+	padding-top: 100rpx;
 	margin-left: 40rpx;
 	margin-right: 40rpx;
 	display: flex;
@@ -172,6 +174,14 @@
 .huodongmaininfo{
 	width: 300rpx;
 	height: 350rpx;
+	
+}
+.huodongzhezhao{
+	width: 300rpx;
+	height: 350rpx;
+	position: absolute;
+	top: 150rpx;
+	left:30rpx;
 }
 .textinfo{
 	padding-top:100rpx;

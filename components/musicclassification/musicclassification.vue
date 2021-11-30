@@ -2,7 +2,7 @@
 	<view >
 		<view class="music" v-for="(val,index) in prodata.list" @tap="goUrl('/components/yuepulist/yuepulist')">
 			<view class="musicitem">
-				<image v-if="val.src" :src="val.src" style="width: 70px; height: 70px;margin-top: 15rpx;margin-left: 15rpx;margin-bottom: 15rpx; ">
+				<image v-if="val.src" :src="val.src" style="width: 70px; height: 70px;margin-top: 15rpx;margin-left: 15rpx;margin-bottom: 15rpx;border-radius: 30rpx; ">
 				<view class="textinfo">
 					<br>
 					<font v-if="val.typec" class="typec">{{val.typec}}</font>
@@ -27,18 +27,16 @@
 			prodata:{
 				title:"音乐信息",
 				list:[
-					{typec:"木管乐器1",typee:"Woodwind instrument1",src:"../../static/img/muguan.png"},
-					{typec:"木管乐器2",typee:"Woodwind instrument2",src:"../../static/img/muguan.png"},
-					{typec:"木管乐器3",typee:"Woodwind instrument3",src:"../../static/img/muguan.png"},
-					{typec:"木管乐器4",typee:"Woodwind instrument4",src:"../../static/img/muguan.png"},
-					{typec:"木管乐器5",typee:"Woodwind instrument5",src:"../../static/img/muguan.png"},
-					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
-					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
-					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
-					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
-					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"},
-					{typec:"木管乐器6",typee:"Woodwind instrument6",src:"../../static/img/muguan.png"}
-				]
+					{typec:"木管乐器",typee:"Woodwind instrument",src:"../../static/img/muguan.png"},
+					{typec:"弦乐器",typee:"Stringed instrument",src:"../../static/img/xian.jpg"},
+					{typec:"铜管乐器",typee:"Brass instruments",src:"../../static/img/tongguan.jpg"},
+					{typec:"打击乐器",typee:"Percussion instrument",src:"../../static/img/daji.jpg"},
+					{typec:"木管乐器",typee:"Woodwind instrument",src:"../../static/img/muguan.png"},
+					{typec:"弦乐器",typee:"Stringed instrument",src:"../../static/img/xian.jpg"},
+					{typec:"铜管乐器",typee:"Brass instruments",src:"../../static/img/tongguan.jpg"},
+					{typec:"打击乐器",typee:"Percussion instrument",src:"../../static/img/daji.jpg"},
+					
+					]
 			}
 		}
 	},
