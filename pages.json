@@ -51,8 +51,7 @@
             "path" : "pages/zhibo/zhibo",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationStyle":"custom"
             }
             
         }
