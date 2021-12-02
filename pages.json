@@ -55,7 +55,16 @@
             }
             
         }
-       
+
+		,{
+		    "path" : "pages/guide/guide",
+		    "style" :                                                                                    
+		    {
+		        "navigationStyle":"custom"
+		    }
+		    
+		}
+		       
    
    
     
