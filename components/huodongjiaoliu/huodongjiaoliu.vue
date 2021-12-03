@@ -2,9 +2,11 @@
 	<view>
 		<uni-nav-bar left-icon="back" @clickLeft="back" title="活动交流" backgroundColor="#f8eee2" ></uni-nav-bar>
 		<view v-for="(val,index) in yuepilist.list" class="jingxuanitem" @click="goUrl('/components/huodongxiangqing/huodongxiangqing')">
-			<view v-if="val.name" class="jxtitle">{{val.name}}</view>
-			<image v-if="val.src" class="jximage" :src="val.src"></image>
+			<view v-if="val.name" class="jxtitle">{{val.name}}
 			<view class="more">了解更多</view>
+			</view>
+			<image v-if="val.src" class="jximage" :src="val.src"></image>
+			
 		</view>
 	</view>
 </template>
@@ -59,7 +61,7 @@
 	
 	margin-bottom: 30rpx;
 	letter-spacing: 6rpx;
-	
+	font-weight: bold;
 	font-size: 40rpx;
 }
 .jximage{
@@ -67,11 +69,13 @@
 	height: 300rpx;
 }
 .more{
-
+	
 	float: right;
 	margin-right: 30rpx;
-	margin-top: 15rpx;
+	margin-top: 10rpx;
+	margin-bottom: auto;
 	font-size: 30rpx;
+	font-weight: normal;
 	color: #98989a;
 }
 </style>

@@ -1,14 +1,18 @@
 <template>
 	<view class="index">
 		
-		<teacher></teacher>
+		<student></student>
 	</view>
 	
 </template>
 
 <script>
 	import teacher from '@/components/teacher/teacher';
+	import student from '@/components/student/student';
 	export default {
+		components:{
+			student,
+		},
 		data() {
 			return {
 				

@@ -301,10 +301,14 @@
                 "enablePullDownRefresh": false,
 				"navigationBarTextStyle": "white",
 				"navigationBarBackgroundColor": "transparent",
+				
 				"app-plus": {
 					"titleNView": {
 						"type": "float",
-						"titleText": "活动交流"
+						"titleText": "活动交流",
+						"titleSize":"28rpx"
+						
+						
 						
 					}
 				}
@@ -356,6 +360,46 @@
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false,
 				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "components/fans/fans",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "components/student/student",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/tongxunlu/tongxunlu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/tongxunluindex/tongxunluindex",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+				
+				
             }
             
         }

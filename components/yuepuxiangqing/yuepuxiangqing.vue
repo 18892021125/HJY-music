@@ -11,7 +11,7 @@
 			<view class="yuepiinfo">
 				<image class="yuepu" src="../../static/img/music/yuepu1.png"> </image>
 				<uni-fab ref="fab" :pattern="pattern" :content="content" :horizontal="horizontal" :vertical="vertical"
-					:direction="direction" @trigger="trigger" @fabClick="fabClick" />
+					:direction="direction" @trigger="trigger"/>
 			</view>
 		</view>
 		<view v-if="current === 1">
@@ -121,25 +121,14 @@
 			},
 			fabClick() {
 				uni.showToast({
-					title: '点击了悬浮按钮',
-					icon: 'none'
+				
 				})
 				
 			},
 			trigger(e) {
 				console.log(e)
 				this.content[e.index].active = !e.item.active
-				uni.showModal({
-					title: '提示',
-					content: `您${this.content[e.index].active ? '选中了' : '取消了'}${e.item.text}`,
-					success: function(res) {
-						if (res.confirm) {
-							console.log('用户点击确定')
-						} else if (res.cancel) {
-							console.log('用户点击取消')
-						}
-					}
-				})
+			
 				this.istiaosu=true;
 			},
 			showDrawer() {

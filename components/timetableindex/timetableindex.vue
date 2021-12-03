@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<uni-nav-bar left-icon="back" @clickLeft="back" title="排练时间表" backgroundColor="#f8eee2" ></uni-nav-bar>
+		<uni-nav-bar left-icon="back" @clickLeft="back" title="我的课程" backgroundColor="#f8eee2" ></uni-nav-bar>
 		<timetable :timetables="timetables"></timetable>
 	</view>
 </template>

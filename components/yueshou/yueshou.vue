@@ -38,10 +38,10 @@
 	margin: auto;
 	border-radius: 40rpx;
 	margin-top: 200rpx;
-	padding: 20rpx;
+	padding: 50rpx;
 	padding-left: 50rpx;
 	padding-right: 50rpx;
-	width: 200rpx;
+	width: 300rpx;
 	letter-spacing: 4rpx;
 	font-size: 35rpx;
 	color:#FFFFFF;

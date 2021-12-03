@@ -139,8 +139,8 @@
 		}
 		
 		&.style2{
-			color: #55007f;
-			background-color:#5555ff;
+			color: #000000;
+			background-color:#000000;
 			
 			.tab{
 				&>view{

@@ -70,6 +70,7 @@
 .yueputitle{
 	margin-top: auto;
 	color: #000000;
+	font-size: 35rpx;
 }
 .musician{
 	font-size: 25rpx;

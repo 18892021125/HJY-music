@@ -2,9 +2,9 @@
 	<view class="userindex">
 		<view class="teacherview">
 			<view class="userinfo">
-				<image src="../../static/img/follow1.png" style="width: 70rpx;height: 70rpx;" class="headimg"></image>
+				<image src="../../static/img/xeyuantouxiang.jpg" style="width: 70rpx;height: 70rpx;border-radius: 50%;" class="headimg"></image>
 				<view class="textinfo">
-					<font class="username">Jenat Ara</font>
+					<font class="username">Carly Rae Jepasen</font>
 					<font class="sign">View Profile</font>
 				</view>
 			</view>
@@ -23,25 +23,28 @@
 					</view>
 				</view>
 				
-				<view class="optionitem" @click="goUrl('/components/settings/settings')">
+				<view class="optionitem" @click="goUrl('/components/lixianhuancun/lixianhuancun')">
 					<image src="../../static/img/shezhi.png" style="width: 50rpx;height: 50rpx;"></image>
 					<view class="optiontextv">
-						<font class="optiontext">设置</font>
+						<font class="optiontext">离线缓存</font>
 					</view>
 				</view>
 				<view class="optionitem"  @click="goUrl('/components/timetableindex/timetableindex')">
-					<image src="../../static/img/pailianshijianbiao.png" style="width: 50rpx;height: 50rpx;"></image>
-					<view class="optiontextv">
-						<font class="optiontext">排练时间表</font>
-					</view>
-				</view>
-				
-				<view class="optionitem" >
 					<image src="../../static/img/wodekecheng.png" style="width: 50rpx;height: 50rpx;"></image>
 					<view class="optiontextv">
 						<font class="optiontext">我的课程</font>
 					</view>
 				</view>
+				
+				
+				
+				<view class="optionitem" @click="goUrl('/components/wodedingdan/wodedingdan')">
+					<image src="../../static/img/dingdan.png" style="width: 50rpx;height: 50rpx;"></image>
+					<view class="optiontextv">
+						<font class="optiontext">订单</font>
+					</view>
+				</view>
+				
 				
 			</view>
 			<view class="line"></view>
