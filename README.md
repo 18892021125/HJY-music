@@ -6,3 +6,4 @@
 ```
 npm i @dcloudio/uni-ui   或   yarn add @dcloudio/uni-ui
 ```
+![image](static/img/1.jpg)
